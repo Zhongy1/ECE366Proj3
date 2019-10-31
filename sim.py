@@ -150,8 +150,8 @@ def main():
     global labelDict
     global instr_memory
 
-    f1 = open("output-test.txt","w+")
-    h1 = open("testcase.asm","r")
+    f1 = open("outputfile.txt","w+")
+    h1 = open("machinecode.txt","r")
 
     if (instr_logging == True):
         f = f1
