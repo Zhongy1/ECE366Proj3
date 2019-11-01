@@ -15,55 +15,55 @@ registers = {
 memory = [0] * 1024
 
 if(line[0:2] == "00"): #lui
-    rx = int(line[2:4], 2)
-    imm = int(line[4:8], 4)
+    rx = int(line[2:4], 2)
+    imm = int(line[4:8], 4)
     imm = imm << 4
     registers[rx] = imm
-    pc += 4
-    print("Instruction: lui " + str(rx) + "," + str(imm))
-    print("pc is now: " + str(pc))
+    pc += 4
+    print("Instruction: lui " + str(rx) + "," + str(imm))
+    print("pc is now: " + str(pc))
 
 if(line[0:2] == "01"): #addi
-    rx = int(line[2:4], 2)
-    imm = int(line[4:8], 4)
+    rx = int(line[2:4], 2)
+    imm = int(line[4:8], 4)
     registers[Rx] = registers[Rx] + imm
-    pc += 4
-    print("Instruction: addi " + str(rx) + "," + str(imm))
-    print("pc is now: " + str(pc))
+    pc += 4
+    print("Instruction: addi " + str(rx) + "," + str(imm))
+    print("pc is now: " + str(pc))
 
 if(line[0:2] == "10"): #hash TODOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO0000
-    rx = int(line[2:4], 2)
-    ry = int(line[4:6], 2)
+    rx = int(line[2:4], 2)
+    ry = int(line[4:6], 2)
     rz = int(line[6:8], 2)
     #registers[rx] = H(Ry, Rz)
-    pc += 4
-    print("Instruction: hash " + str(rx) + "," + str(ry) + "," + str(rz))
-    print("pc is now: " + str(pc))
+    pc += 4
+    print("Instruction: hash " + str(rx) + "," + str(ry) + "," + str(rz))
+    print("pc is now: " + str(pc))
 
 if(line[0:4] == "1100"): #ldinc TODOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO0000
-    rx = int(line[4:6], 2)
-    ry = int(line[6:8], 2)
+    rx = int(line[4:6], 2)
+    ry = int(line[6:8], 2)
     #registers[rx] = Mem[Ry] + 1
-    pc += 4
-    print("Instruction: ldinc " + str(rx) + "," + "(" + str(ry) + ")" )
-    print("pc is now: " + str(pc))
+    pc += 4
+    print("Instruction: ldinc " + str(rx) + "," + "(" + str(ry) + ")" )
+    print("pc is now: " + str(pc))
 
 if(line[0:4] == "1110"): #st TODOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO0000
-    rx = int(line[4:6], 2)
-    ry = int(line[6:8], 2)
+    rx = int(line[4:6], 2)
+    ry = int(line[6:8], 2)
     #Mem[Ry] = Rx
-    pc += 4
-    print("Instruction: st " + str(rx) + "," + "(" + str(ry) + ")" )
-    print("pc is now: " + str(pc))
+    pc += 4
+    print("Instruction: st " + str(rx) + "," + "(" + str(ry) + ")" )
+    print("pc is now: " + str(pc))
 
 if(line[0:4] == "1111"): #sto3inc TODOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO0000
-    rx = int(line[4:6], 2)
-    ry = int(line[6:8], 2)
+    rx = int(line[4:6], 2)
+    ry = int(line[6:8], 2)
     #Mem[Ry + 3] = Rx 
     #Ry++
-    pc += 4
-    print("Instruction: sto3inc " + str(rx) + "," + "(" + str(ry) + ")" )
-    print("pc is now: " + str(pc))
+    pc += 4
+    print("Instruction: sto3inc " + str(rx) + "," + "(" + str(ry) + ")" )
+    print("pc is now: " + str(pc))
 
 
 def initializeInstrMemory(instr_mem_array, labels_dict, asm):
