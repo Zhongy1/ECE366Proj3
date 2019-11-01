@@ -1,0 +1,86 @@
+instr_logging = True
+f = 0
+
+registers = {
+        '$0': 0,
+        '$1': 0,
+        '$2': 0,
+        '$3': 0
+    }
+
+#Each element in array represents a 4 byte chunk (32 bits)
+#Starts at memory location 0x2000 and ends at 0x3000
+memory = [0] * 1024
+
+#Each entry refers to a tag name as well as the line it points to
+#Example: labelDict['loop1'] might have the value 3, which means the label 'loop1' refers to line 3 in instr_memory
+labelDict = {}
+
+#Each element represenets each line in assembly code
+#This excludes labels, tags, and empty lines
+#doing len(instr_memory) will give you the static instruction count of the program
+instr_memory = []
+
+
+
+
+def lui(options):
+    registers[options[0]] = (int(options[1], 16 if (options[1].count('x')) else 10) << 16) | (registers[options[0]] & 0xFFFF)
+    registers[options[0]] -= pow(2, 32) if ((registers[options[0]] >> 31) & 0x1 == 1) else 0
+    registers['pc'] += 4
+    if (instr_logging):
+        f.write('\tChange ' + options[0] + ' to ' + str(registers[options[0]]) + '\n')
+        f.write('\tPC: ' + str(registers['pc'] - 4) + ' --> ' + str(registers['pc']) + '\n')
+
+
+def addi(options):
+    registers[options[0]] = (registers[options[1]] + int(options[2], 16 if (options[2].count('x')) else 10)) & 0xFFFFFFFF
+    registers[options[0]] -= pow(2, 32) if ((registers[options[0]] >> 31) & 0x1 == 1) else 0
+    registers['pc'] += 4
+    if (instr_logging):
+        f.write('\tChange ' + options[0] + ' to ' + str(registers[options[0]]) + '\n')
+        f.write('\tPC: ' + str(registers['pc'] - 4) + ' --> ' + str(registers['pc']) + '\n')
+
+
+def hash(options):
+    a = registers[options[1]] & 0xFFFFFFFF
+    b = registers[options[2]] & 0xFFFFFFFF
+    for i in range(0, 5):
+        product = a * b
+        hi = product & 0xFFFFFFFF
+        lo = (product >> 32) & 0xFFFFFFFF
+        a = hi ^ lo
+    c = (a & 0xFFFF) ^ ((a >> 16) & 0xFFFF)
+    registers[options[0]] = (c & 0xFF) ^ ((c >> 8) & 0xFF)
+    registers['pc'] += 4
+    if (instr_logging):
+        f.write('*** Special Instruction ***\n')
+        f.write('\t' + options[0] + ' = H(' + options[1] + ', ' + options[2] + ')\n')
+        f.write('\t' + options[0] + ' = ' + str(registers[options[0]]) + '\n')
+        f.write('\tPC: ' + str(registers['pc'] - 4) + ' --> ' + str(registers['pc']) + '\n')
+
+def ldinc(options): #NEED TO CHANGE THE DEFINITION OF THIS FUNCTION
+    registers[options[0]] = (registers[options[1]] + int(options[2], 16 if (options[2].count('x')) else 10)) & 0xFFFFFFFF
+    registers[options[0]] -= pow(2, 32) if ((registers[options[0]] >> 31) & 0x1 == 1) else 0
+    registers['pc'] += 4
+    if (instr_logging):
+        f.write('\tChange ' + options[0] + ' to ' + str(registers[options[0]]) + '\n')
+        f.write('\tPC: ' + str(registers['pc'] - 4) + ' --> ' + str(registers['pc']) + '\n')
+
+def st(options): #NEED TO CHANGE THE DEFINITION OF THIS FUNCTION
+    registers[options[0]] = (registers[options[1]] + int(options[2], 16 if (options[2].count('x')) else 10)) & 0xFFFFFFFF
+    registers[options[0]] -= pow(2, 32) if ((registers[options[0]] >> 31) & 0x1 == 1) else 0
+    registers['pc'] += 4
+    if (instr_logging):
+        f.write('\tChange ' + options[0] + ' to ' + str(registers[options[0]]) + '\n')
+        f.write('\tPC: ' + str(registers['pc'] - 4) + ' --> ' + str(registers['pc']) + '\n')
+
+def sto3inc(options): #NEED TO CHANGE THE DEFINITION OF THIS FUNCTION
+    registers[options[0]] = (registers[options[1]] + int(options[2], 16 if (options[2].count('x')) else 10)) & 0xFFFFFFFF
+    registers[options[0]] -= pow(2, 32) if ((registers[options[0]] >> 31) & 0x1 == 1) else 0
+    registers['pc'] += 4
+    if (instr_logging):
+        f.write('\tChange ' + options[0] + ' to ' + str(registers[options[0]]) + '\n')
+        f.write('\tPC: ' + str(registers['pc'] - 4) + ' --> ' + str(registers['pc']) + '\n')
+
+
