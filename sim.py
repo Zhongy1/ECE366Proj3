@@ -1,70 +1,81 @@
-
 # ECE 366 Project 3 Fall 2019
 # Group 12: Zhongy Chen & Claire Chappee
 f = 0
-instr_logging == True
+instr_logging = True
 
 registers = {
-        '$0': 0,
-        '$1': 0,
-        '$2': 0,
-        '$3': 0
+        '00': 0,
+        '01': 0,
+        '10': 0,
+        '11': 0,
+        'pc': 0
     }
-#Each element in array represents a 4 byte chunk (32 bits)
-#Starts at memory location 0x2000 and ends at 0x3000
-memory = [0] * 1024
 
-if(line[0:2] == "00"): #lui
-    rx = int(line[2:4], 2)
-    imm = int(line[4:8], 4)
-    imm = imm << 4
-    registers[rx] = imm
-    pc += 4
-    print("Instruction: lui " + str(rx) + "," + str(imm))
-    print("pc is now: " + str(pc))
+#2^9 needs to be the size of our memory
+memory = [0] * 512
 
-if(line[0:2] == "01"): #addi
-    rx = int(line[2:4], 2)
-    imm = int(line[4:8], 4)
-    registers[rx] = registers[rx] + imm
-    pc += 4
-    print("Instruction: addi " + str(rx) + "," + str(imm))
-    print("pc is now: " + str(pc))
+def myFunc(line):
+    if(line[0:2] == "00"): #lui
+        rx = int(line[2:4], 2)
+        imm = int(line[4:8], 4)
+        imm = imm << 4
+        registers[rx] = imm
+        pc += 1
+        print("Instruction: lui " + str(rx) + "," + str(imm))
+        print("pc is now: " + str(pc))
 
-if(line[0:2] == "10"): #hash TODOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO0000
-    rx = int(line[2:4], 2)
-    ry = int(line[4:6], 2)
-    rz = int(line[6:8], 2)
-    #registers[rx] = H(ry, rz)
-    pc += 4
-    print("Instruction: hash " + str(rx) + "," + str(ry) + "," + str(rz))
-    print("pc is now: " + str(pc))
+    if(line[0:2] == "01"): #addi
+        rx = int(line[2:4], 2)
+        imm = int(line[4:8], 4)
+        registers[rx] = registers[rx] + imm
+        pc += 1
+        print("Instruction: addi " + str(rx) + "," + str(imm))
+        print("pc is now: " + str(pc))
 
-if(line[0:4] == "1100"): #ldinc TODOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO0000
-    rx = int(line[4:6], 2)
-    ry = int(line[6:8], 2)
-    #registers[rx] = Mem[ry] + 1
-    pc += 4
-    print("Instruction: ldinc " + str(rx) + "," + "(" + str(ry) + ")" )
-    print("pc is now: " + str(pc))
+    if(line[0:2] == "10"): #hash 
+        rx = int(line[2:4], 2)
+        ry = int(line[4:6], 2)
+        rz = int(line[6:8], 2)
+        #registers[rx] = H(ry, rz)
+        for i in range(0, 5):
+            srcA = ry
+            srcB = rz
+            temp = srcA * srcB
+            hi = (temp ^ 0xFF00) >> 8
+            lo = temp ^ 0xFF
+            srcA = hi ^ lo
+        pc += 1
+        print("Instruction: hash " + str(rx) + "," + str(ry) + "," + str(rz))
+        print("pc is now: " + str(pc))
 
-if(line[0:4] == "1110"): #st TODOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO0000
-    rx = int(line[4:6], 2)
-    ry = int(line[6:8], 2)
-    #Mem[ry] = rx
-    pc += 4
-    print("Instruction: st " + str(rx) + "," + "(" + str(ry) + ")" )
-    print("pc is now: " + str(pc))
+    if(line[0:4] == "1100"): #ldinc
+        rx = int(line[4:6], 2)
+        ry = int(line[6:8], 2)
+        registers[rx] = memory[int(ry,2)] + 1
+        pc += 1
+        print("Instruction: ldinc " + str(rx) + "," + "(" + str(ry) + ")" )
+        print("pc is now: " + str(pc))
 
-if(line[0:4] == "1111"): #sto3inc TODOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO0000
-    rx = int(line[4:6], 2)
-    ry = int(line[6:8], 2)
-    #Mem[ry + 3] = rx 
-    ry += 1
-    pc += 4
-    print("Instruction: sto3inc " + str(rx) + "," + "(" + str(ry) + ")" )
-    print("pc is now: " + str(pc))
+    if(line[0:4] == "1110"): #st 
+        rx = int(line[4:6], 2)
+        ry = int(line[6:8], 2)
+        memory[int(ry,2)] = registers[rx]
+        pc += 1
+        print("Instruction: st " + str(rx) + "," + "(" + str(ry) + ")" )
+        print("pc is now: " + str(pc))
 
+    if(line[0:4] == "1111"): #sto3inc 
+        rx = int(line[4:6], 2)
+        ry = int(line[6:8], 2)
+        valRX = registers[rx]
+        srcA = registers[ry]
+        srcB = 3
+        aluResult = srcA + srcB
+        memory[aluResult] = valRX
+        registers[ry] += 1
+        pc += 1
+        print("Instruction: sto3inc " + str(rx) + "," + "(" + str(ry) + ")" )
+        print("pc is now: " + str(pc))
 
 def initializeInstrMemory(instr_mem_array, labels_dict, asm):
     index = 0
@@ -256,7 +267,7 @@ def main():
     #clear memory
     for key in registers:
         registers[key] = 0
-    memory = [0] * 1024
+    memory = [0] * 512
 
 
 if __name__ == "__main__":
