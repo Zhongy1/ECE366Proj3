@@ -1,0 +1,3118 @@
+Instruction: lui $0, 15
+Register[$0] now has value 240
+PC is now: 1
+Instruction: addi $0, 10
+Register[$0] now has value 250
+PC is now: 2
+Instruction: addi $1, 1
+Register[$1] now has value 1
+PC is now: 3
+Instruction: hash $2, $1, $0
+Register[$2] now has value 0
+PC is now: 4
+Instruction: ldinc $3, ($2)
+Register[$3] now has value 1
+PC is now: 5
+Instruction: st $3, ($2)
+Register[$3] now has value 1
+PC is now: 6
+Instruction: sto3inc $2, ($1)
+Register[$2] now has value 0
+PC is now: 7
+Instruction: hash $2, $1, $0
+Register[$2] now has value 3
+PC is now: 8
+Instruction: ldinc $3, ($2)
+Register[$3] now has value 1
+PC is now: 9
+Instruction: st $3, ($2)
+Register[$3] now has value 1
+PC is now: 10
+Instruction: sto3inc $2, ($1)
+Register[$2] now has value 3
+PC is now: 11
+Instruction: hash $2, $1, $0
+Register[$2] now has value 0
+PC is now: 12
+Instruction: ldinc $3, ($2)
+Register[$3] now has value 2
+PC is now: 13
+Instruction: st $3, ($2)
+Register[$3] now has value 2
+PC is now: 14
+Instruction: sto3inc $2, ($1)
+Register[$2] now has value 0
+PC is now: 15
+Instruction: hash $2, $1, $0
+Register[$2] now has value 1
+PC is now: 16
+Instruction: ldinc $3, ($2)
+Register[$3] now has value 1
+PC is now: 17
+Instruction: st $3, ($2)
+Register[$3] now has value 1
+PC is now: 18
+Instruction: sto3inc $2, ($1)
+Register[$2] now has value 1
+PC is now: 19
+Instruction: hash $2, $1, $0
+Register[$2] now has value 1
+PC is now: 20
+Instruction: ldinc $3, ($2)
+Register[$3] now has value 2
+PC is now: 21
+Instruction: st $3, ($2)
+Register[$3] now has value 2
+PC is now: 22
+Instruction: sto3inc $2, ($1)
+Register[$2] now has value 1
+PC is now: 23
+Instruction: hash $2, $1, $0
+Register[$2] now has value 2
+PC is now: 24
+Instruction: ldinc $3, ($2)
+Register[$3] now has value 1
+PC is now: 25
+Instruction: st $3, ($2)
+Register[$3] now has value 1
+PC is now: 26
+Instruction: sto3inc $2, ($1)
+Register[$2] now has value 2
+PC is now: 27
+Instruction: hash $2, $1, $0
+Register[$2] now has value 3
+PC is now: 28
+Instruction: ldinc $3, ($2)
+Register[$3] now has value 2
+PC is now: 29
+Instruction: st $3, ($2)
+Register[$3] now has value 2
+PC is now: 30
+Instruction: sto3inc $2, ($1)
+Register[$2] now has value 3
+PC is now: 31
+Instruction: hash $2, $1, $0
+Register[$2] now has value 1
+PC is now: 32
+Instruction: ldinc $3, ($2)
+Register[$3] now has value 3
+PC is now: 33
+Instruction: st $3, ($2)
+Register[$3] now has value 3
+PC is now: 34
+Instruction: sto3inc $2, ($1)
+Register[$2] now has value 1
+PC is now: 35
+Instruction: hash $2, $1, $0
+Register[$2] now has value 0
+PC is now: 36
+Instruction: ldinc $3, ($2)
+Register[$3] now has value 3
+PC is now: 37
+Instruction: st $3, ($2)
+Register[$3] now has value 3
+PC is now: 38
+Instruction: sto3inc $2, ($1)
+Register[$2] now has value 0
+PC is now: 39
+Instruction: hash $2, $1, $0
+Register[$2] now has value 2
+PC is now: 40
+Instruction: ldinc $3, ($2)
+Register[$3] now has value 2
+PC is now: 41
+Instruction: st $3, ($2)
+Register[$3] now has value 2
+PC is now: 42
+Instruction: sto3inc $2, ($1)
+Register[$2] now has value 2
+PC is now: 43
+Instruction: hash $2, $1, $0
+Register[$2] now has value 3
+PC is now: 44
+Instruction: ldinc $3, ($2)
+Register[$3] now has value 3
+PC is now: 45
+Instruction: st $3, ($2)
+Register[$3] now has value 3
+PC is now: 46
+Instruction: sto3inc $2, ($1)
+Register[$2] now has value 3
+PC is now: 47
+Instruction: hash $2, $1, $0
+Register[$2] now has value 2
+PC is now: 48
+Instruction: ldinc $3, ($2)
+Register[$3] now has value 3
+PC is now: 49
+Instruction: st $3, ($2)
+Register[$3] now has value 3
+PC is now: 50
+Instruction: sto3inc $2, ($1)
+Register[$2] now has value 2
+PC is now: 51
+Instruction: hash $2, $1, $0
+Register[$2] now has value 1
+PC is now: 52
+Instruction: ldinc $3, ($2)
+Register[$3] now has value 4
+PC is now: 53
+Instruction: st $3, ($2)
+Register[$3] now has value 4
+PC is now: 54
+Instruction: sto3inc $2, ($1)
+Register[$2] now has value 1
+PC is now: 55
+Instruction: hash $2, $1, $0
+Register[$2] now has value 2
+PC is now: 56
+Instruction: ldinc $3, ($2)
+Register[$3] now has value 4
+PC is now: 57
+Instruction: st $3, ($2)
+Register[$3] now has value 4
+PC is now: 58
+Instruction: sto3inc $2, ($1)
+Register[$2] now has value 2
+PC is now: 59
+Instruction: hash $2, $1, $0
+Register[$2] now has value 3
+PC is now: 60
+Instruction: ldinc $3, ($2)
+Register[$3] now has value 4
+PC is now: 61
+Instruction: st $3, ($2)
+Register[$3] now has value 4
+PC is now: 62
+Instruction: sto3inc $2, ($1)
+Register[$2] now has value 3
+PC is now: 63
+Instruction: hash $2, $1, $0
+Register[$2] now has value 2
+PC is now: 64
+Instruction: ldinc $3, ($2)
+Register[$3] now has value 5
+PC is now: 65
+Instruction: st $3, ($2)
+Register[$3] now has value 5
+PC is now: 66
+Instruction: sto3inc $2, ($1)
+Register[$2] now has value 2
+PC is now: 67
+Instruction: hash $2, $1, $0
+Register[$2] now has value 2
+PC is now: 68
+Instruction: ldinc $3, ($2)
+Register[$3] now has value 6
+PC is now: 69
+Instruction: st $3, ($2)
+Register[$3] now has value 6
+PC is now: 70
+Instruction: sto3inc $2, ($1)
+Register[$2] now has value 2
+PC is now: 71
+Instruction: hash $2, $1, $0
+Register[$2] now has value 0
+PC is now: 72
+Instruction: ldinc $3, ($2)
+Register[$3] now has value 4
+PC is now: 73
+Instruction: st $3, ($2)
+Register[$3] now has value 4
+PC is now: 74
+Instruction: sto3inc $2, ($1)
+Register[$2] now has value 0
+PC is now: 75
+Instruction: hash $2, $1, $0
+Register[$2] now has value 1
+PC is now: 76
+Instruction: ldinc $3, ($2)
+Register[$3] now has value 5
+PC is now: 77
+Instruction: st $3, ($2)
+Register[$3] now has value 5
+PC is now: 78
+Instruction: sto3inc $2, ($1)
+Register[$2] now has value 1
+PC is now: 79
+Instruction: hash $2, $1, $0
+Register[$2] now has value 0
+PC is now: 80
+Instruction: ldinc $3, ($2)
+Register[$3] now has value 5
+PC is now: 81
+Instruction: st $3, ($2)
+Register[$3] now has value 5
+PC is now: 82
+Instruction: sto3inc $2, ($1)
+Register[$2] now has value 0
+PC is now: 83
+Instruction: hash $2, $1, $0
+Register[$2] now has value 0
+PC is now: 84
+Instruction: ldinc $3, ($2)
+Register[$3] now has value 6
+PC is now: 85
+Instruction: st $3, ($2)
+Register[$3] now has value 6
+PC is now: 86
+Instruction: sto3inc $2, ($1)
+Register[$2] now has value 0
+PC is now: 87
+Instruction: hash $2, $1, $0
+Register[$2] now has value 1
+PC is now: 88
+Instruction: ldinc $3, ($2)
+Register[$3] now has value 6
+PC is now: 89
+Instruction: st $3, ($2)
+Register[$3] now has value 6
+PC is now: 90
+Instruction: sto3inc $2, ($1)
+Register[$2] now has value 1
+PC is now: 91
+Instruction: hash $2, $1, $0
+Register[$2] now has value 1
+PC is now: 92
+Instruction: ldinc $3, ($2)
+Register[$3] now has value 7
+PC is now: 93
+Instruction: st $3, ($2)
+Register[$3] now has value 7
+PC is now: 94
+Instruction: sto3inc $2, ($1)
+Register[$2] now has value 1
+PC is now: 95
+Instruction: hash $2, $1, $0
+Register[$2] now has value 2
+PC is now: 96
+Instruction: ldinc $3, ($2)
+Register[$3] now has value 7
+PC is now: 97
+Instruction: st $3, ($2)
+Register[$3] now has value 7
+PC is now: 98
+Instruction: sto3inc $2, ($1)
+Register[$2] now has value 2
+PC is now: 99
+Instruction: hash $2, $1, $0
+Register[$2] now has value 0
+PC is now: 100
+Instruction: ldinc $3, ($2)
+Register[$3] now has value 7
+PC is now: 101
+Instruction: st $3, ($2)
+Register[$3] now has value 7
+PC is now: 102
+Instruction: sto3inc $2, ($1)
+Register[$2] now has value 0
+PC is now: 103
+Instruction: hash $2, $1, $0
+Register[$2] now has value 0
+PC is now: 104
+Instruction: ldinc $3, ($2)
+Register[$3] now has value 8
+PC is now: 105
+Instruction: st $3, ($2)
+Register[$3] now has value 8
+PC is now: 106
+Instruction: sto3inc $2, ($1)
+Register[$2] now has value 0
+PC is now: 107
+Instruction: hash $2, $1, $0
+Register[$2] now has value 0
+PC is now: 108
+Instruction: ldinc $3, ($2)
+Register[$3] now has value 9
+PC is now: 109
+Instruction: st $3, ($2)
+Register[$3] now has value 9
+PC is now: 110
+Instruction: sto3inc $2, ($1)
+Register[$2] now has value 0
+PC is now: 111
+Instruction: hash $2, $1, $0
+Register[$2] now has value 1
+PC is now: 112
+Instruction: ldinc $3, ($2)
+Register[$3] now has value 8
+PC is now: 113
+Instruction: st $3, ($2)
+Register[$3] now has value 8
+PC is now: 114
+Instruction: sto3inc $2, ($1)
+Register[$2] now has value 1
+PC is now: 115
+Instruction: hash $2, $1, $0
+Register[$2] now has value 2
+PC is now: 116
+Instruction: ldinc $3, ($2)
+Register[$3] now has value 8
+PC is now: 117
+Instruction: st $3, ($2)
+Register[$3] now has value 8
+PC is now: 118
+Instruction: sto3inc $2, ($1)
+Register[$2] now has value 2
+PC is now: 119
+Instruction: hash $2, $1, $0
+Register[$2] now has value 1
+PC is now: 120
+Instruction: ldinc $3, ($2)
+Register[$3] now has value 9
+PC is now: 121
+Instruction: st $3, ($2)
+Register[$3] now has value 9
+PC is now: 122
+Instruction: sto3inc $2, ($1)
+Register[$2] now has value 1
+PC is now: 123
+Instruction: hash $2, $1, $0
+Register[$2] now has value 3
+PC is now: 124
+Instruction: ldinc $3, ($2)
+Register[$3] now has value 5
+PC is now: 125
+Instruction: st $3, ($2)
+Register[$3] now has value 5
+PC is now: 126
+Instruction: sto3inc $2, ($1)
+Register[$2] now has value 3
+PC is now: 127
+Instruction: hash $2, $1, $0
+Register[$2] now has value 3
+PC is now: 128
+Instruction: ldinc $3, ($2)
+Register[$3] now has value 6
+PC is now: 129
+Instruction: st $3, ($2)
+Register[$3] now has value 6
+PC is now: 130
+Instruction: sto3inc $2, ($1)
+Register[$2] now has value 3
+PC is now: 131
+Instruction: hash $2, $1, $0
+Register[$2] now has value 2
+PC is now: 132
+Instruction: ldinc $3, ($2)
+Register[$3] now has value 9
+PC is now: 133
+Instruction: st $3, ($2)
+Register[$3] now has value 9
+PC is now: 134
+Instruction: sto3inc $2, ($1)
+Register[$2] now has value 2
+PC is now: 135
+Instruction: hash $2, $1, $0
+Register[$2] now has value 1
+PC is now: 136
+Instruction: ldinc $3, ($2)
+Register[$3] now has value 10
+PC is now: 137
+Instruction: st $3, ($2)
+Register[$3] now has value 10
+PC is now: 138
+Instruction: sto3inc $2, ($1)
+Register[$2] now has value 1
+PC is now: 139
+Instruction: hash $2, $1, $0
+Register[$2] now has value 2
+PC is now: 140
+Instruction: ldinc $3, ($2)
+Register[$3] now has value 10
+PC is now: 141
+Instruction: st $3, ($2)
+Register[$3] now has value 10
+PC is now: 142
+Instruction: sto3inc $2, ($1)
+Register[$2] now has value 2
+PC is now: 143
+Instruction: hash $2, $1, $0
+Register[$2] now has value 3
+PC is now: 144
+Instruction: ldinc $3, ($2)
+Register[$3] now has value 7
+PC is now: 145
+Instruction: st $3, ($2)
+Register[$3] now has value 7
+PC is now: 146
+Instruction: sto3inc $2, ($1)
+Register[$2] now has value 3
+PC is now: 147
+Instruction: hash $2, $1, $0
+Register[$2] now has value 2
+PC is now: 148
+Instruction: ldinc $3, ($2)
+Register[$3] now has value 11
+PC is now: 149
+Instruction: st $3, ($2)
+Register[$3] now has value 11
+PC is now: 150
+Instruction: sto3inc $2, ($1)
+Register[$2] now has value 2
+PC is now: 151
+Instruction: hash $2, $1, $0
+Register[$2] now has value 1
+PC is now: 152
+Instruction: ldinc $3, ($2)
+Register[$3] now has value 11
+PC is now: 153
+Instruction: st $3, ($2)
+Register[$3] now has value 11
+PC is now: 154
+Instruction: sto3inc $2, ($1)
+Register[$2] now has value 1
+PC is now: 155
+Instruction: hash $2, $1, $0
+Register[$2] now has value 1
+PC is now: 156
+Instruction: ldinc $3, ($2)
+Register[$3] now has value 12
+PC is now: 157
+Instruction: st $3, ($2)
+Register[$3] now has value 12
+PC is now: 158
+Instruction: sto3inc $2, ($1)
+Register[$2] now has value 1
+PC is now: 159
+Instruction: hash $2, $1, $0
+Register[$2] now has value 3
+PC is now: 160
+Instruction: ldinc $3, ($2)
+Register[$3] now has value 8
+PC is now: 161
+Instruction: st $3, ($2)
+Register[$3] now has value 8
+PC is now: 162
+Instruction: sto3inc $2, ($1)
+Register[$2] now has value 3
+PC is now: 163
+Instruction: hash $2, $1, $0
+Register[$2] now has value 3
+PC is now: 164
+Instruction: ldinc $3, ($2)
+Register[$3] now has value 9
+PC is now: 165
+Instruction: st $3, ($2)
+Register[$3] now has value 9
+PC is now: 166
+Instruction: sto3inc $2, ($1)
+Register[$2] now has value 3
+PC is now: 167
+Instruction: hash $2, $1, $0
+Register[$2] now has value 2
+PC is now: 168
+Instruction: ldinc $3, ($2)
+Register[$3] now has value 12
+PC is now: 169
+Instruction: st $3, ($2)
+Register[$3] now has value 12
+PC is now: 170
+Instruction: sto3inc $2, ($1)
+Register[$2] now has value 2
+PC is now: 171
+Instruction: hash $2, $1, $0
+Register[$2] now has value 1
+PC is now: 172
+Instruction: ldinc $3, ($2)
+Register[$3] now has value 13
+PC is now: 173
+Instruction: st $3, ($2)
+Register[$3] now has value 13
+PC is now: 174
+Instruction: sto3inc $2, ($1)
+Register[$2] now has value 1
+PC is now: 175
+Instruction: hash $2, $1, $0
+Register[$2] now has value 2
+PC is now: 176
+Instruction: ldinc $3, ($2)
+Register[$3] now has value 13
+PC is now: 177
+Instruction: st $3, ($2)
+Register[$3] now has value 13
+PC is now: 178
+Instruction: sto3inc $2, ($1)
+Register[$2] now has value 2
+PC is now: 179
+Instruction: hash $2, $1, $0
+Register[$2] now has value 2
+PC is now: 180
+Instruction: ldinc $3, ($2)
+Register[$3] now has value 14
+PC is now: 181
+Instruction: st $3, ($2)
+Register[$3] now has value 14
+PC is now: 182
+Instruction: sto3inc $2, ($1)
+Register[$2] now has value 2
+PC is now: 183
+Instruction: hash $2, $1, $0
+Register[$2] now has value 0
+PC is now: 184
+Instruction: ldinc $3, ($2)
+Register[$3] now has value 10
+PC is now: 185
+Instruction: st $3, ($2)
+Register[$3] now has value 10
+PC is now: 186
+Instruction: sto3inc $2, ($1)
+Register[$2] now has value 0
+PC is now: 187
+Instruction: hash $2, $1, $0
+Register[$2] now has value 3
+PC is now: 188
+Instruction: ldinc $3, ($2)
+Register[$3] now has value 10
+PC is now: 189
+Instruction: st $3, ($2)
+Register[$3] now has value 10
+PC is now: 190
+Instruction: sto3inc $2, ($1)
+Register[$2] now has value 3
+PC is now: 191
+Instruction: hash $2, $1, $0
+Register[$2] now has value 0
+PC is now: 192
+Instruction: ldinc $3, ($2)
+Register[$3] now has value 11
+PC is now: 193
+Instruction: st $3, ($2)
+Register[$3] now has value 11
+PC is now: 194
+Instruction: sto3inc $2, ($1)
+Register[$2] now has value 0
+PC is now: 195
+Instruction: hash $2, $1, $0
+Register[$2] now has value 3
+PC is now: 196
+Instruction: ldinc $3, ($2)
+Register[$3] now has value 11
+PC is now: 197
+Instruction: st $3, ($2)
+Register[$3] now has value 11
+PC is now: 198
+Instruction: sto3inc $2, ($1)
+Register[$2] now has value 3
+PC is now: 199
+Instruction: hash $2, $1, $0
+Register[$2] now has value 2
+PC is now: 200
+Instruction: ldinc $3, ($2)
+Register[$3] now has value 15
+PC is now: 201
+Instruction: st $3, ($2)
+Register[$3] now has value 15
+PC is now: 202
+Instruction: sto3inc $2, ($1)
+Register[$2] now has value 2
+PC is now: 203
+Instruction: hash $2, $1, $0
+Register[$2] now has value 0
+PC is now: 204
+Instruction: ldinc $3, ($2)
+Register[$3] now has value 12
+PC is now: 205
+Instruction: st $3, ($2)
+Register[$3] now has value 12
+PC is now: 206
+Instruction: sto3inc $2, ($1)
+Register[$2] now has value 0
+PC is now: 207
+Instruction: hash $2, $1, $0
+Register[$2] now has value 0
+PC is now: 208
+Instruction: ldinc $3, ($2)
+Register[$3] now has value 13
+PC is now: 209
+Instruction: st $3, ($2)
+Register[$3] now has value 13
+PC is now: 210
+Instruction: sto3inc $2, ($1)
+Register[$2] now has value 0
+PC is now: 211
+Instruction: hash $2, $1, $0
+Register[$2] now has value 2
+PC is now: 212
+Instruction: ldinc $3, ($2)
+Register[$3] now has value 16
+PC is now: 213
+Instruction: st $3, ($2)
+Register[$3] now has value 16
+PC is now: 214
+Instruction: sto3inc $2, ($1)
+Register[$2] now has value 2
+PC is now: 215
+Instruction: hash $2, $1, $0
+Register[$2] now has value 3
+PC is now: 216
+Instruction: ldinc $3, ($2)
+Register[$3] now has value 12
+PC is now: 217
+Instruction: st $3, ($2)
+Register[$3] now has value 12
+PC is now: 218
+Instruction: sto3inc $2, ($1)
+Register[$2] now has value 3
+PC is now: 219
+Instruction: hash $2, $1, $0
+Register[$2] now has value 1
+PC is now: 220
+Instruction: ldinc $3, ($2)
+Register[$3] now has value 14
+PC is now: 221
+Instruction: st $3, ($2)
+Register[$3] now has value 14
+PC is now: 222
+Instruction: sto3inc $2, ($1)
+Register[$2] now has value 1
+PC is now: 223
+Instruction: hash $2, $1, $0
+Register[$2] now has value 0
+PC is now: 224
+Instruction: ldinc $3, ($2)
+Register[$3] now has value 14
+PC is now: 225
+Instruction: st $3, ($2)
+Register[$3] now has value 14
+PC is now: 226
+Instruction: sto3inc $2, ($1)
+Register[$2] now has value 0
+PC is now: 227
+Instruction: hash $2, $1, $0
+Register[$2] now has value 0
+PC is now: 228
+Instruction: ldinc $3, ($2)
+Register[$3] now has value 15
+PC is now: 229
+Instruction: st $3, ($2)
+Register[$3] now has value 15
+PC is now: 230
+Instruction: sto3inc $2, ($1)
+Register[$2] now has value 0
+PC is now: 231
+Instruction: hash $2, $1, $0
+Register[$2] now has value 1
+PC is now: 232
+Instruction: ldinc $3, ($2)
+Register[$3] now has value 15
+PC is now: 233
+Instruction: st $3, ($2)
+Register[$3] now has value 15
+PC is now: 234
+Instruction: sto3inc $2, ($1)
+Register[$2] now has value 1
+PC is now: 235
+Instruction: hash $2, $1, $0
+Register[$2] now has value 2
+PC is now: 236
+Instruction: ldinc $3, ($2)
+Register[$3] now has value 17
+PC is now: 237
+Instruction: st $3, ($2)
+Register[$3] now has value 17
+PC is now: 238
+Instruction: sto3inc $2, ($1)
+Register[$2] now has value 2
+PC is now: 239
+Instruction: hash $2, $1, $0
+Register[$2] now has value 2
+PC is now: 240
+Instruction: ldinc $3, ($2)
+Register[$3] now has value 18
+PC is now: 241
+Instruction: st $3, ($2)
+Register[$3] now has value 18
+PC is now: 242
+Instruction: sto3inc $2, ($1)
+Register[$2] now has value 2
+PC is now: 243
+Instruction: hash $2, $1, $0
+Register[$2] now has value 2
+PC is now: 244
+Instruction: ldinc $3, ($2)
+Register[$3] now has value 19
+PC is now: 245
+Instruction: st $3, ($2)
+Register[$3] now has value 19
+PC is now: 246
+Instruction: sto3inc $2, ($1)
+Register[$2] now has value 2
+PC is now: 247
+Instruction: hash $2, $1, $0
+Register[$2] now has value 2
+PC is now: 248
+Instruction: ldinc $3, ($2)
+Register[$3] now has value 20
+PC is now: 249
+Instruction: st $3, ($2)
+Register[$3] now has value 20
+PC is now: 250
+Instruction: sto3inc $2, ($1)
+Register[$2] now has value 2
+PC is now: 251
+Instruction: hash $2, $1, $0
+Register[$2] now has value 2
+PC is now: 252
+Instruction: ldinc $3, ($2)
+Register[$3] now has value 21
+PC is now: 253
+Instruction: st $3, ($2)
+Register[$3] now has value 21
+PC is now: 254
+Instruction: sto3inc $2, ($1)
+Register[$2] now has value 2
+PC is now: 255
+Instruction: hash $2, $1, $0
+Register[$2] now has value 1
+PC is now: 256
+Instruction: ldinc $3, ($2)
+Register[$3] now has value 16
+PC is now: 257
+Instruction: st $3, ($2)
+Register[$3] now has value 16
+PC is now: 258
+Instruction: sto3inc $2, ($1)
+Register[$2] now has value 1
+PC is now: 259
+Instruction: hash $2, $1, $0
+Register[$2] now has value 1
+PC is now: 260
+Instruction: ldinc $3, ($2)
+Register[$3] now has value 17
+PC is now: 261
+Instruction: st $3, ($2)
+Register[$3] now has value 17
+PC is now: 262
+Instruction: sto3inc $2, ($1)
+Register[$2] now has value 1
+PC is now: 263
+Instruction: hash $2, $1, $0
+Register[$2] now has value 2
+PC is now: 264
+Instruction: ldinc $3, ($2)
+Register[$3] now has value 22
+PC is now: 265
+Instruction: st $3, ($2)
+Register[$3] now has value 22
+PC is now: 266
+Instruction: sto3inc $2, ($1)
+Register[$2] now has value 2
+PC is now: 267
+Instruction: hash $2, $1, $0
+Register[$2] now has value 0
+PC is now: 268
+Instruction: ldinc $3, ($2)
+Register[$3] now has value 16
+PC is now: 269
+Instruction: st $3, ($2)
+Register[$3] now has value 16
+PC is now: 270
+Instruction: sto3inc $2, ($1)
+Register[$2] now has value 0
+PC is now: 271
+Instruction: hash $2, $1, $0
+Register[$2] now has value 1
+PC is now: 272
+Instruction: ldinc $3, ($2)
+Register[$3] now has value 18
+PC is now: 273
+Instruction: st $3, ($2)
+Register[$3] now has value 18
+PC is now: 274
+Instruction: sto3inc $2, ($1)
+Register[$2] now has value 1
+PC is now: 275
+Instruction: hash $2, $1, $0
+Register[$2] now has value 0
+PC is now: 276
+Instruction: ldinc $3, ($2)
+Register[$3] now has value 17
+PC is now: 277
+Instruction: st $3, ($2)
+Register[$3] now has value 17
+PC is now: 278
+Instruction: sto3inc $2, ($1)
+Register[$2] now has value 0
+PC is now: 279
+Instruction: hash $2, $1, $0
+Register[$2] now has value 3
+PC is now: 280
+Instruction: ldinc $3, ($2)
+Register[$3] now has value 13
+PC is now: 281
+Instruction: st $3, ($2)
+Register[$3] now has value 13
+PC is now: 282
+Instruction: sto3inc $2, ($1)
+Register[$2] now has value 3
+PC is now: 283
+Instruction: hash $2, $1, $0
+Register[$2] now has value 2
+PC is now: 284
+Instruction: ldinc $3, ($2)
+Register[$3] now has value 23
+PC is now: 285
+Instruction: st $3, ($2)
+Register[$3] now has value 23
+PC is now: 286
+Instruction: sto3inc $2, ($1)
+Register[$2] now has value 2
+PC is now: 287
+Instruction: hash $2, $1, $0
+Register[$2] now has value 1
+PC is now: 288
+Instruction: ldinc $3, ($2)
+Register[$3] now has value 19
+PC is now: 289
+Instruction: st $3, ($2)
+Register[$3] now has value 19
+PC is now: 290
+Instruction: sto3inc $2, ($1)
+Register[$2] now has value 1
+PC is now: 291
+Instruction: hash $2, $1, $0
+Register[$2] now has value 0
+PC is now: 292
+Instruction: ldinc $3, ($2)
+Register[$3] now has value 18
+PC is now: 293
+Instruction: st $3, ($2)
+Register[$3] now has value 18
+PC is now: 294
+Instruction: sto3inc $2, ($1)
+Register[$2] now has value 0
+PC is now: 295
+Instruction: hash $2, $1, $0
+Register[$2] now has value 2
+PC is now: 296
+Instruction: ldinc $3, ($2)
+Register[$3] now has value 24
+PC is now: 297
+Instruction: st $3, ($2)
+Register[$3] now has value 24
+PC is now: 298
+Instruction: sto3inc $2, ($1)
+Register[$2] now has value 2
+PC is now: 299
+Instruction: hash $2, $1, $0
+Register[$2] now has value 2
+PC is now: 300
+Instruction: ldinc $3, ($2)
+Register[$3] now has value 25
+PC is now: 301
+Instruction: st $3, ($2)
+Register[$3] now has value 25
+PC is now: 302
+Instruction: sto3inc $2, ($1)
+Register[$2] now has value 2
+PC is now: 303
+Instruction: hash $2, $1, $0
+Register[$2] now has value 0
+PC is now: 304
+Instruction: ldinc $3, ($2)
+Register[$3] now has value 19
+PC is now: 305
+Instruction: st $3, ($2)
+Register[$3] now has value 19
+PC is now: 306
+Instruction: sto3inc $2, ($1)
+Register[$2] now has value 0
+PC is now: 307
+Instruction: hash $2, $1, $0
+Register[$2] now has value 0
+PC is now: 308
+Instruction: ldinc $3, ($2)
+Register[$3] now has value 20
+PC is now: 309
+Instruction: st $3, ($2)
+Register[$3] now has value 20
+PC is now: 310
+Instruction: sto3inc $2, ($1)
+Register[$2] now has value 0
+PC is now: 311
+Instruction: hash $2, $1, $0
+Register[$2] now has value 1
+PC is now: 312
+Instruction: ldinc $3, ($2)
+Register[$3] now has value 20
+PC is now: 313
+Instruction: st $3, ($2)
+Register[$3] now has value 20
+PC is now: 314
+Instruction: sto3inc $2, ($1)
+Register[$2] now has value 1
+PC is now: 315
+Instruction: hash $2, $1, $0
+Register[$2] now has value 2
+PC is now: 316
+Instruction: ldinc $3, ($2)
+Register[$3] now has value 26
+PC is now: 317
+Instruction: st $3, ($2)
+Register[$3] now has value 26
+PC is now: 318
+Instruction: sto3inc $2, ($1)
+Register[$2] now has value 2
+PC is now: 319
+Instruction: hash $2, $1, $0
+Register[$2] now has value 2
+PC is now: 320
+Instruction: ldinc $3, ($2)
+Register[$3] now has value 27
+PC is now: 321
+Instruction: st $3, ($2)
+Register[$3] now has value 27
+PC is now: 322
+Instruction: sto3inc $2, ($1)
+Register[$2] now has value 2
+PC is now: 323
+Instruction: hash $2, $1, $0
+Register[$2] now has value 0
+PC is now: 324
+Instruction: ldinc $3, ($2)
+Register[$3] now has value 21
+PC is now: 325
+Instruction: st $3, ($2)
+Register[$3] now has value 21
+PC is now: 326
+Instruction: sto3inc $2, ($1)
+Register[$2] now has value 0
+PC is now: 327
+Instruction: hash $2, $1, $0
+Register[$2] now has value 0
+PC is now: 328
+Instruction: ldinc $3, ($2)
+Register[$3] now has value 22
+PC is now: 329
+Instruction: st $3, ($2)
+Register[$3] now has value 22
+PC is now: 330
+Instruction: sto3inc $2, ($1)
+Register[$2] now has value 0
+PC is now: 331
+Instruction: hash $2, $1, $0
+Register[$2] now has value 3
+PC is now: 332
+Instruction: ldinc $3, ($2)
+Register[$3] now has value 14
+PC is now: 333
+Instruction: st $3, ($2)
+Register[$3] now has value 14
+PC is now: 334
+Instruction: sto3inc $2, ($1)
+Register[$2] now has value 3
+PC is now: 335
+Instruction: hash $2, $1, $0
+Register[$2] now has value 2
+PC is now: 336
+Instruction: ldinc $3, ($2)
+Register[$3] now has value 28
+PC is now: 337
+Instruction: st $3, ($2)
+Register[$3] now has value 28
+PC is now: 338
+Instruction: sto3inc $2, ($1)
+Register[$2] now has value 2
+PC is now: 339
+Instruction: hash $2, $1, $0
+Register[$2] now has value 1
+PC is now: 340
+Instruction: ldinc $3, ($2)
+Register[$3] now has value 21
+PC is now: 341
+Instruction: st $3, ($2)
+Register[$3] now has value 21
+PC is now: 342
+Instruction: sto3inc $2, ($1)
+Register[$2] now has value 1
+PC is now: 343
+Instruction: hash $2, $1, $0
+Register[$2] now has value 2
+PC is now: 344
+Instruction: ldinc $3, ($2)
+Register[$3] now has value 29
+PC is now: 345
+Instruction: st $3, ($2)
+Register[$3] now has value 29
+PC is now: 346
+Instruction: sto3inc $2, ($1)
+Register[$2] now has value 2
+PC is now: 347
+Instruction: hash $2, $1, $0
+Register[$2] now has value 2
+PC is now: 348
+Instruction: ldinc $3, ($2)
+Register[$3] now has value 30
+PC is now: 349
+Instruction: st $3, ($2)
+Register[$3] now has value 30
+PC is now: 350
+Instruction: sto3inc $2, ($1)
+Register[$2] now has value 2
+PC is now: 351
+Instruction: hash $2, $1, $0
+Register[$2] now has value 3
+PC is now: 352
+Instruction: ldinc $3, ($2)
+Register[$3] now has value 15
+PC is now: 353
+Instruction: st $3, ($2)
+Register[$3] now has value 15
+PC is now: 354
+Instruction: sto3inc $2, ($1)
+Register[$2] now has value 3
+PC is now: 355
+Instruction: hash $2, $1, $0
+Register[$2] now has value 1
+PC is now: 356
+Instruction: ldinc $3, ($2)
+Register[$3] now has value 22
+PC is now: 357
+Instruction: st $3, ($2)
+Register[$3] now has value 22
+PC is now: 358
+Instruction: sto3inc $2, ($1)
+Register[$2] now has value 1
+PC is now: 359
+Instruction: hash $2, $1, $0
+Register[$2] now has value 2
+PC is now: 360
+Instruction: ldinc $3, ($2)
+Register[$3] now has value 31
+PC is now: 361
+Instruction: st $3, ($2)
+Register[$3] now has value 31
+PC is now: 362
+Instruction: sto3inc $2, ($1)
+Register[$2] now has value 2
+PC is now: 363
+Instruction: hash $2, $1, $0
+Register[$2] now has value 0
+PC is now: 364
+Instruction: ldinc $3, ($2)
+Register[$3] now has value 23
+PC is now: 365
+Instruction: st $3, ($2)
+Register[$3] now has value 23
+PC is now: 366
+Instruction: sto3inc $2, ($1)
+Register[$2] now has value 0
+PC is now: 367
+Instruction: hash $2, $1, $0
+Register[$2] now has value 0
+PC is now: 368
+Instruction: ldinc $3, ($2)
+Register[$3] now has value 24
+PC is now: 369
+Instruction: st $3, ($2)
+Register[$3] now has value 24
+PC is now: 370
+Instruction: sto3inc $2, ($1)
+Register[$2] now has value 0
+PC is now: 371
+Instruction: hash $2, $1, $0
+Register[$2] now has value 3
+PC is now: 372
+Instruction: ldinc $3, ($2)
+Register[$3] now has value 16
+PC is now: 373
+Instruction: st $3, ($2)
+Register[$3] now has value 16
+PC is now: 374
+Instruction: sto3inc $2, ($1)
+Register[$2] now has value 3
+PC is now: 375
+Instruction: hash $2, $1, $0
+Register[$2] now has value 0
+PC is now: 376
+Instruction: ldinc $3, ($2)
+Register[$3] now has value 25
+PC is now: 377
+Instruction: st $3, ($2)
+Register[$3] now has value 25
+PC is now: 378
+Instruction: sto3inc $2, ($1)
+Register[$2] now has value 0
+PC is now: 379
+Instruction: hash $2, $1, $0
+Register[$2] now has value 2
+PC is now: 380
+Instruction: ldinc $3, ($2)
+Register[$3] now has value 32
+PC is now: 381
+Instruction: st $3, ($2)
+Register[$3] now has value 32
+PC is now: 382
+Instruction: sto3inc $2, ($1)
+Register[$2] now has value 2
+PC is now: 383
+Instruction: hash $2, $1, $0
+Register[$2] now has value 0
+PC is now: 384
+Instruction: ldinc $3, ($2)
+Register[$3] now has value 26
+PC is now: 385
+Instruction: st $3, ($2)
+Register[$3] now has value 26
+PC is now: 386
+Instruction: sto3inc $2, ($1)
+Register[$2] now has value 0
+PC is now: 387
+Instruction: hash $2, $1, $0
+Register[$2] now has value 2
+PC is now: 388
+Instruction: ldinc $3, ($2)
+Register[$3] now has value 33
+PC is now: 389
+Instruction: st $3, ($2)
+Register[$3] now has value 33
+PC is now: 390
+Instruction: sto3inc $2, ($1)
+Register[$2] now has value 2
+PC is now: 391
+Instruction: hash $2, $1, $0
+Register[$2] now has value 1
+PC is now: 392
+Instruction: ldinc $3, ($2)
+Register[$3] now has value 23
+PC is now: 393
+Instruction: st $3, ($2)
+Register[$3] now has value 23
+PC is now: 394
+Instruction: sto3inc $2, ($1)
+Register[$2] now has value 1
+PC is now: 395
+Instruction: hash $2, $1, $0
+Register[$2] now has value 0
+PC is now: 396
+Instruction: ldinc $3, ($2)
+Register[$3] now has value 27
+PC is now: 397
+Instruction: st $3, ($2)
+Register[$3] now has value 27
+PC is now: 398
+Instruction: sto3inc $2, ($1)
+Register[$2] now has value 0
+PC is now: 399
+Instruction: hash $2, $1, $0
+Register[$2] now has value 1
+PC is now: 400
+Instruction: ldinc $3, ($2)
+Register[$3] now has value 24
+PC is now: 401
+Instruction: st $3, ($2)
+Register[$3] now has value 24
+PC is now: 402
+Instruction: sto3inc $2, ($1)
+Register[$2] now has value 1
+PC is now: 403
+Instruction: hash $2, $1, $0
+Register[$2] now has value 0
+PC is now: 404
+Instruction: ldinc $3, ($2)
+Register[$3] now has value 28
+PC is now: 405
+Instruction: st $3, ($2)
+Register[$3] now has value 28
+PC is now: 406
+Instruction: sto3inc $2, ($1)
+Register[$2] now has value 0
+PC is now: 407
+Instruction: hash $2, $1, $0
+Register[$2] now has value 0
+PC is now: 408
+Instruction: ldinc $3, ($2)
+Register[$3] now has value 29
+PC is now: 409
+Instruction: st $3, ($2)
+Register[$3] now has value 29
+PC is now: 410
+Instruction: sto3inc $2, ($1)
+Register[$2] now has value 0
+PC is now: 411
+Instruction: hash $2, $1, $0
+Register[$2] now has value 2
+PC is now: 412
+Instruction: ldinc $3, ($2)
+Register[$3] now has value 34
+PC is now: 413
+Instruction: st $3, ($2)
+Register[$3] now has value 34
+PC is now: 414
+Instruction: sto3inc $2, ($1)
+Register[$2] now has value 2
+PC is now: 415
+Instruction: hash $2, $1, $0
+Register[$2] now has value 3
+PC is now: 416
+Instruction: ldinc $3, ($2)
+Register[$3] now has value 17
+PC is now: 417
+Instruction: st $3, ($2)
+Register[$3] now has value 17
+PC is now: 418
+Instruction: sto3inc $2, ($1)
+Register[$2] now has value 3
+PC is now: 419
+Instruction: hash $2, $1, $0
+Register[$2] now has value 0
+PC is now: 420
+Instruction: ldinc $3, ($2)
+Register[$3] now has value 30
+PC is now: 421
+Instruction: st $3, ($2)
+Register[$3] now has value 30
+PC is now: 422
+Instruction: sto3inc $2, ($1)
+Register[$2] now has value 0
+PC is now: 423
+Instruction: hash $2, $1, $0
+Register[$2] now has value 0
+PC is now: 424
+Instruction: ldinc $3, ($2)
+Register[$3] now has value 31
+PC is now: 425
+Instruction: st $3, ($2)
+Register[$3] now has value 31
+PC is now: 426
+Instruction: sto3inc $2, ($1)
+Register[$2] now has value 0
+PC is now: 427
+Instruction: hash $2, $1, $0
+Register[$2] now has value 1
+PC is now: 428
+Instruction: ldinc $3, ($2)
+Register[$3] now has value 25
+PC is now: 429
+Instruction: st $3, ($2)
+Register[$3] now has value 25
+PC is now: 430
+Instruction: sto3inc $2, ($1)
+Register[$2] now has value 1
+PC is now: 431
+Instruction: hash $2, $1, $0
+Register[$2] now has value 0
+PC is now: 432
+Instruction: ldinc $3, ($2)
+Register[$3] now has value 32
+PC is now: 433
+Instruction: st $3, ($2)
+Register[$3] now has value 32
+PC is now: 434
+Instruction: sto3inc $2, ($1)
+Register[$2] now has value 0
+PC is now: 435
+Instruction: hash $2, $1, $0
+Register[$2] now has value 3
+PC is now: 436
+Instruction: ldinc $3, ($2)
+Register[$3] now has value 18
+PC is now: 437
+Instruction: st $3, ($2)
+Register[$3] now has value 18
+PC is now: 438
+Instruction: sto3inc $2, ($1)
+Register[$2] now has value 3
+PC is now: 439
+Instruction: hash $2, $1, $0
+Register[$2] now has value 0
+PC is now: 440
+Instruction: ldinc $3, ($2)
+Register[$3] now has value 33
+PC is now: 441
+Instruction: st $3, ($2)
+Register[$3] now has value 33
+PC is now: 442
+Instruction: sto3inc $2, ($1)
+Register[$2] now has value 0
+PC is now: 443
+Instruction: hash $2, $1, $0
+Register[$2] now has value 0
+PC is now: 444
+Instruction: ldinc $3, ($2)
+Register[$3] now has value 34
+PC is now: 445
+Instruction: st $3, ($2)
+Register[$3] now has value 34
+PC is now: 446
+Instruction: sto3inc $2, ($1)
+Register[$2] now has value 0
+PC is now: 447
+Instruction: hash $2, $1, $0
+Register[$2] now has value 0
+PC is now: 448
+Instruction: ldinc $3, ($2)
+Register[$3] now has value 35
+PC is now: 449
+Instruction: st $3, ($2)
+Register[$3] now has value 35
+PC is now: 450
+Instruction: sto3inc $2, ($1)
+Register[$2] now has value 0
+PC is now: 451
+Instruction: hash $2, $1, $0
+Register[$2] now has value 2
+PC is now: 452
+Instruction: ldinc $3, ($2)
+Register[$3] now has value 35
+PC is now: 453
+Instruction: st $3, ($2)
+Register[$3] now has value 35
+PC is now: 454
+Instruction: sto3inc $2, ($1)
+Register[$2] now has value 2
+PC is now: 455
+Instruction: hash $2, $1, $0
+Register[$2] now has value 2
+PC is now: 456
+Instruction: ldinc $3, ($2)
+Register[$3] now has value 36
+PC is now: 457
+Instruction: st $3, ($2)
+Register[$3] now has value 36
+PC is now: 458
+Instruction: sto3inc $2, ($1)
+Register[$2] now has value 2
+PC is now: 459
+Instruction: hash $2, $1, $0
+Register[$2] now has value 3
+PC is now: 460
+Instruction: ldinc $3, ($2)
+Register[$3] now has value 19
+PC is now: 461
+Instruction: st $3, ($2)
+Register[$3] now has value 19
+PC is now: 462
+Instruction: sto3inc $2, ($1)
+Register[$2] now has value 3
+PC is now: 463
+Instruction: hash $2, $1, $0
+Register[$2] now has value 1
+PC is now: 464
+Instruction: ldinc $3, ($2)
+Register[$3] now has value 26
+PC is now: 465
+Instruction: st $3, ($2)
+Register[$3] now has value 26
+PC is now: 466
+Instruction: sto3inc $2, ($1)
+Register[$2] now has value 1
+PC is now: 467
+Instruction: hash $2, $1, $0
+Register[$2] now has value 1
+PC is now: 468
+Instruction: ldinc $3, ($2)
+Register[$3] now has value 27
+PC is now: 469
+Instruction: st $3, ($2)
+Register[$3] now has value 27
+PC is now: 470
+Instruction: sto3inc $2, ($1)
+Register[$2] now has value 1
+PC is now: 471
+Instruction: hash $2, $1, $0
+Register[$2] now has value 2
+PC is now: 472
+Instruction: ldinc $3, ($2)
+Register[$3] now has value 37
+PC is now: 473
+Instruction: st $3, ($2)
+Register[$3] now has value 37
+PC is now: 474
+Instruction: sto3inc $2, ($1)
+Register[$2] now has value 2
+PC is now: 475
+Instruction: hash $2, $1, $0
+Register[$2] now has value 0
+PC is now: 476
+Instruction: ldinc $3, ($2)
+Register[$3] now has value 36
+PC is now: 477
+Instruction: st $3, ($2)
+Register[$3] now has value 36
+PC is now: 478
+Instruction: sto3inc $2, ($1)
+Register[$2] now has value 0
+PC is now: 479
+Instruction: hash $2, $1, $0
+Register[$2] now has value 1
+PC is now: 480
+Instruction: ldinc $3, ($2)
+Register[$3] now has value 28
+PC is now: 481
+Instruction: st $3, ($2)
+Register[$3] now has value 28
+PC is now: 482
+Instruction: sto3inc $2, ($1)
+Register[$2] now has value 1
+PC is now: 483
+Instruction: hash $2, $1, $0
+Register[$2] now has value 1
+PC is now: 484
+Instruction: ldinc $3, ($2)
+Register[$3] now has value 29
+PC is now: 485
+Instruction: st $3, ($2)
+Register[$3] now has value 29
+PC is now: 486
+Instruction: sto3inc $2, ($1)
+Register[$2] now has value 1
+PC is now: 487
+Instruction: hash $2, $1, $0
+Register[$2] now has value 3
+PC is now: 488
+Instruction: ldinc $3, ($2)
+Register[$3] now has value 20
+PC is now: 489
+Instruction: st $3, ($2)
+Register[$3] now has value 20
+PC is now: 490
+Instruction: sto3inc $2, ($1)
+Register[$2] now has value 3
+PC is now: 491
+Instruction: hash $2, $1, $0
+Register[$2] now has value 0
+PC is now: 492
+Instruction: ldinc $3, ($2)
+Register[$3] now has value 37
+PC is now: 493
+Instruction: st $3, ($2)
+Register[$3] now has value 37
+PC is now: 494
+Instruction: sto3inc $2, ($1)
+Register[$2] now has value 0
+PC is now: 495
+Instruction: hash $2, $1, $0
+Register[$2] now has value 2
+PC is now: 496
+Instruction: ldinc $3, ($2)
+Register[$3] now has value 38
+PC is now: 497
+Instruction: st $3, ($2)
+Register[$3] now has value 38
+PC is now: 498
+Instruction: sto3inc $2, ($1)
+Register[$2] now has value 2
+PC is now: 499
+Instruction: hash $2, $1, $0
+Register[$2] now has value 2
+PC is now: 500
+Instruction: ldinc $3, ($2)
+Register[$3] now has value 39
+PC is now: 501
+Instruction: st $3, ($2)
+Register[$3] now has value 39
+PC is now: 502
+Instruction: sto3inc $2, ($1)
+Register[$2] now has value 2
+PC is now: 503
+Instruction: hash $2, $1, $0
+Register[$2] now has value 2
+PC is now: 504
+Instruction: ldinc $3, ($2)
+Register[$3] now has value 40
+PC is now: 505
+Instruction: st $3, ($2)
+Register[$3] now has value 40
+PC is now: 506
+Instruction: sto3inc $2, ($1)
+Register[$2] now has value 2
+PC is now: 507
+Instruction: hash $2, $1, $0
+Register[$2] now has value 2
+PC is now: 508
+Instruction: ldinc $3, ($2)
+Register[$3] now has value 41
+PC is now: 509
+Instruction: st $3, ($2)
+Register[$3] now has value 41
+PC is now: 510
+Instruction: sto3inc $2, ($1)
+Register[$2] now has value 2
+PC is now: 511
+Instruction: hash $2, $1, $0
+Register[$2] now has value 0
+PC is now: 512
+Instruction: ldinc $3, ($2)
+Register[$3] now has value 38
+PC is now: 513
+Instruction: st $3, ($2)
+Register[$3] now has value 38
+PC is now: 514
+Instruction: sto3inc $2, ($1)
+Register[$2] now has value 0
+PC is now: 515
+Instruction: hash $2, $1, $0
+Register[$2] now has value 1
+PC is now: 516
+Instruction: ldinc $3, ($2)
+Register[$3] now has value 30
+PC is now: 517
+Instruction: st $3, ($2)
+Register[$3] now has value 30
+PC is now: 518
+Instruction: sto3inc $2, ($1)
+Register[$2] now has value 1
+PC is now: 519
+Instruction: hash $2, $1, $0
+Register[$2] now has value 2
+PC is now: 520
+Instruction: ldinc $3, ($2)
+Register[$3] now has value 42
+PC is now: 521
+Instruction: st $3, ($2)
+Register[$3] now has value 42
+PC is now: 522
+Instruction: sto3inc $2, ($1)
+Register[$2] now has value 2
+PC is now: 523
+Instruction: hash $2, $1, $0
+Register[$2] now has value 2
+PC is now: 524
+Instruction: ldinc $3, ($2)
+Register[$3] now has value 43
+PC is now: 525
+Instruction: st $3, ($2)
+Register[$3] now has value 43
+PC is now: 526
+Instruction: sto3inc $2, ($1)
+Register[$2] now has value 2
+PC is now: 527
+Instruction: hash $2, $1, $0
+Register[$2] now has value 2
+PC is now: 528
+Instruction: ldinc $3, ($2)
+Register[$3] now has value 44
+PC is now: 529
+Instruction: st $3, ($2)
+Register[$3] now has value 44
+PC is now: 530
+Instruction: sto3inc $2, ($1)
+Register[$2] now has value 2
+PC is now: 531
+Instruction: hash $2, $1, $0
+Register[$2] now has value 1
+PC is now: 532
+Instruction: ldinc $3, ($2)
+Register[$3] now has value 31
+PC is now: 533
+Instruction: st $3, ($2)
+Register[$3] now has value 31
+PC is now: 534
+Instruction: sto3inc $2, ($1)
+Register[$2] now has value 1
+PC is now: 535
+Instruction: hash $2, $1, $0
+Register[$2] now has value 1
+PC is now: 536
+Instruction: ldinc $3, ($2)
+Register[$3] now has value 32
+PC is now: 537
+Instruction: st $3, ($2)
+Register[$3] now has value 32
+PC is now: 538
+Instruction: sto3inc $2, ($1)
+Register[$2] now has value 1
+PC is now: 539
+Instruction: hash $2, $1, $0
+Register[$2] now has value 0
+PC is now: 540
+Instruction: ldinc $3, ($2)
+Register[$3] now has value 39
+PC is now: 541
+Instruction: st $3, ($2)
+Register[$3] now has value 39
+PC is now: 542
+Instruction: sto3inc $2, ($1)
+Register[$2] now has value 0
+PC is now: 543
+Instruction: hash $2, $1, $0
+Register[$2] now has value 1
+PC is now: 544
+Instruction: ldinc $3, ($2)
+Register[$3] now has value 33
+PC is now: 545
+Instruction: st $3, ($2)
+Register[$3] now has value 33
+PC is now: 546
+Instruction: sto3inc $2, ($1)
+Register[$2] now has value 1
+PC is now: 547
+Instruction: hash $2, $1, $0
+Register[$2] now has value 2
+PC is now: 548
+Instruction: ldinc $3, ($2)
+Register[$3] now has value 45
+PC is now: 549
+Instruction: st $3, ($2)
+Register[$3] now has value 45
+PC is now: 550
+Instruction: sto3inc $2, ($1)
+Register[$2] now has value 2
+PC is now: 551
+Instruction: hash $2, $1, $0
+Register[$2] now has value 0
+PC is now: 552
+Instruction: ldinc $3, ($2)
+Register[$3] now has value 40
+PC is now: 553
+Instruction: st $3, ($2)
+Register[$3] now has value 40
+PC is now: 554
+Instruction: sto3inc $2, ($1)
+Register[$2] now has value 0
+PC is now: 555
+Instruction: hash $2, $1, $0
+Register[$2] now has value 1
+PC is now: 556
+Instruction: ldinc $3, ($2)
+Register[$3] now has value 34
+PC is now: 557
+Instruction: st $3, ($2)
+Register[$3] now has value 34
+PC is now: 558
+Instruction: sto3inc $2, ($1)
+Register[$2] now has value 1
+PC is now: 559
+Instruction: hash $2, $1, $0
+Register[$2] now has value 1
+PC is now: 560
+Instruction: ldinc $3, ($2)
+Register[$3] now has value 35
+PC is now: 561
+Instruction: st $3, ($2)
+Register[$3] now has value 35
+PC is now: 562
+Instruction: sto3inc $2, ($1)
+Register[$2] now has value 1
+PC is now: 563
+Instruction: hash $2, $1, $0
+Register[$2] now has value 2
+PC is now: 564
+Instruction: ldinc $3, ($2)
+Register[$3] now has value 46
+PC is now: 565
+Instruction: st $3, ($2)
+Register[$3] now has value 46
+PC is now: 566
+Instruction: sto3inc $2, ($1)
+Register[$2] now has value 2
+PC is now: 567
+Instruction: hash $2, $1, $0
+Register[$2] now has value 2
+PC is now: 568
+Instruction: ldinc $3, ($2)
+Register[$3] now has value 47
+PC is now: 569
+Instruction: st $3, ($2)
+Register[$3] now has value 47
+PC is now: 570
+Instruction: sto3inc $2, ($1)
+Register[$2] now has value 2
+PC is now: 571
+Instruction: hash $2, $1, $0
+Register[$2] now has value 2
+PC is now: 572
+Instruction: ldinc $3, ($2)
+Register[$3] now has value 48
+PC is now: 573
+Instruction: st $3, ($2)
+Register[$3] now has value 48
+PC is now: 574
+Instruction: sto3inc $2, ($1)
+Register[$2] now has value 2
+PC is now: 575
+Instruction: hash $2, $1, $0
+Register[$2] now has value 1
+PC is now: 576
+Instruction: ldinc $3, ($2)
+Register[$3] now has value 36
+PC is now: 577
+Instruction: st $3, ($2)
+Register[$3] now has value 36
+PC is now: 578
+Instruction: sto3inc $2, ($1)
+Register[$2] now has value 1
+PC is now: 579
+Instruction: hash $2, $1, $0
+Register[$2] now has value 2
+PC is now: 580
+Instruction: ldinc $3, ($2)
+Register[$3] now has value 49
+PC is now: 581
+Instruction: st $3, ($2)
+Register[$3] now has value 49
+PC is now: 582
+Instruction: sto3inc $2, ($1)
+Register[$2] now has value 2
+PC is now: 583
+Instruction: hash $2, $1, $0
+Register[$2] now has value 2
+PC is now: 584
+Instruction: ldinc $3, ($2)
+Register[$3] now has value 50
+PC is now: 585
+Instruction: st $3, ($2)
+Register[$3] now has value 50
+PC is now: 586
+Instruction: sto3inc $2, ($1)
+Register[$2] now has value 2
+PC is now: 587
+Instruction: hash $2, $1, $0
+Register[$2] now has value 2
+PC is now: 588
+Instruction: ldinc $3, ($2)
+Register[$3] now has value 51
+PC is now: 589
+Instruction: st $3, ($2)
+Register[$3] now has value 51
+PC is now: 590
+Instruction: sto3inc $2, ($1)
+Register[$2] now has value 2
+PC is now: 591
+Instruction: hash $2, $1, $0
+Register[$2] now has value 3
+PC is now: 592
+Instruction: ldinc $3, ($2)
+Register[$3] now has value 21
+PC is now: 593
+Instruction: st $3, ($2)
+Register[$3] now has value 21
+PC is now: 594
+Instruction: sto3inc $2, ($1)
+Register[$2] now has value 3
+PC is now: 595
+Instruction: hash $2, $1, $0
+Register[$2] now has value 2
+PC is now: 596
+Instruction: ldinc $3, ($2)
+Register[$3] now has value 52
+PC is now: 597
+Instruction: st $3, ($2)
+Register[$3] now has value 52
+PC is now: 598
+Instruction: sto3inc $2, ($1)
+Register[$2] now has value 2
+PC is now: 599
+Instruction: hash $2, $1, $0
+Register[$2] now has value 2
+PC is now: 600
+Instruction: ldinc $3, ($2)
+Register[$3] now has value 53
+PC is now: 601
+Instruction: st $3, ($2)
+Register[$3] now has value 53
+PC is now: 602
+Instruction: sto3inc $2, ($1)
+Register[$2] now has value 2
+PC is now: 603
+Instruction: hash $2, $1, $0
+Register[$2] now has value 2
+PC is now: 604
+Instruction: ldinc $3, ($2)
+Register[$3] now has value 54
+PC is now: 605
+Instruction: st $3, ($2)
+Register[$3] now has value 54
+PC is now: 606
+Instruction: sto3inc $2, ($1)
+Register[$2] now has value 2
+PC is now: 607
+Instruction: hash $2, $1, $0
+Register[$2] now has value 2
+PC is now: 608
+Instruction: ldinc $3, ($2)
+Register[$3] now has value 55
+PC is now: 609
+Instruction: st $3, ($2)
+Register[$3] now has value 55
+PC is now: 610
+Instruction: sto3inc $2, ($1)
+Register[$2] now has value 2
+PC is now: 611
+Instruction: hash $2, $1, $0
+Register[$2] now has value 0
+PC is now: 612
+Instruction: ldinc $3, ($2)
+Register[$3] now has value 41
+PC is now: 613
+Instruction: st $3, ($2)
+Register[$3] now has value 41
+PC is now: 614
+Instruction: sto3inc $2, ($1)
+Register[$2] now has value 0
+PC is now: 615
+Instruction: hash $2, $1, $0
+Register[$2] now has value 2
+PC is now: 616
+Instruction: ldinc $3, ($2)
+Register[$3] now has value 56
+PC is now: 617
+Instruction: st $3, ($2)
+Register[$3] now has value 56
+PC is now: 618
+Instruction: sto3inc $2, ($1)
+Register[$2] now has value 2
+PC is now: 619
+Instruction: hash $2, $1, $0
+Register[$2] now has value 1
+PC is now: 620
+Instruction: ldinc $3, ($2)
+Register[$3] now has value 37
+PC is now: 621
+Instruction: st $3, ($2)
+Register[$3] now has value 37
+PC is now: 622
+Instruction: sto3inc $2, ($1)
+Register[$2] now has value 1
+PC is now: 623
+Instruction: hash $2, $1, $0
+Register[$2] now has value 0
+PC is now: 624
+Instruction: ldinc $3, ($2)
+Register[$3] now has value 42
+PC is now: 625
+Instruction: st $3, ($2)
+Register[$3] now has value 42
+PC is now: 626
+Instruction: sto3inc $2, ($1)
+Register[$2] now has value 0
+PC is now: 627
+Instruction: hash $2, $1, $0
+Register[$2] now has value 3
+PC is now: 628
+Instruction: ldinc $3, ($2)
+Register[$3] now has value 22
+PC is now: 629
+Instruction: st $3, ($2)
+Register[$3] now has value 22
+PC is now: 630
+Instruction: sto3inc $2, ($1)
+Register[$2] now has value 3
+PC is now: 631
+Instruction: hash $2, $1, $0
+Register[$2] now has value 0
+PC is now: 632
+Instruction: ldinc $3, ($2)
+Register[$3] now has value 43
+PC is now: 633
+Instruction: st $3, ($2)
+Register[$3] now has value 43
+PC is now: 634
+Instruction: sto3inc $2, ($1)
+Register[$2] now has value 0
+PC is now: 635
+Instruction: hash $2, $1, $0
+Register[$2] now has value 2
+PC is now: 636
+Instruction: ldinc $3, ($2)
+Register[$3] now has value 57
+PC is now: 637
+Instruction: st $3, ($2)
+Register[$3] now has value 57
+PC is now: 638
+Instruction: sto3inc $2, ($1)
+Register[$2] now has value 2
+PC is now: 639
+Instruction: hash $2, $1, $0
+Register[$2] now has value 1
+PC is now: 640
+Instruction: ldinc $3, ($2)
+Register[$3] now has value 38
+PC is now: 641
+Instruction: st $3, ($2)
+Register[$3] now has value 38
+PC is now: 642
+Instruction: sto3inc $2, ($1)
+Register[$2] now has value 1
+PC is now: 643
+Instruction: hash $2, $1, $0
+Register[$2] now has value 2
+PC is now: 644
+Instruction: ldinc $3, ($2)
+Register[$3] now has value 58
+PC is now: 645
+Instruction: st $3, ($2)
+Register[$3] now has value 58
+PC is now: 646
+Instruction: sto3inc $2, ($1)
+Register[$2] now has value 2
+PC is now: 647
+Instruction: hash $2, $1, $0
+Register[$2] now has value 0
+PC is now: 648
+Instruction: ldinc $3, ($2)
+Register[$3] now has value 44
+PC is now: 649
+Instruction: st $3, ($2)
+Register[$3] now has value 44
+PC is now: 650
+Instruction: sto3inc $2, ($1)
+Register[$2] now has value 0
+PC is now: 651
+Instruction: hash $2, $1, $0
+Register[$2] now has value 2
+PC is now: 652
+Instruction: ldinc $3, ($2)
+Register[$3] now has value 59
+PC is now: 653
+Instruction: st $3, ($2)
+Register[$3] now has value 59
+PC is now: 654
+Instruction: sto3inc $2, ($1)
+Register[$2] now has value 2
+PC is now: 655
+Instruction: hash $2, $1, $0
+Register[$2] now has value 3
+PC is now: 656
+Instruction: ldinc $3, ($2)
+Register[$3] now has value 23
+PC is now: 657
+Instruction: st $3, ($2)
+Register[$3] now has value 23
+PC is now: 658
+Instruction: sto3inc $2, ($1)
+Register[$2] now has value 3
+PC is now: 659
+Instruction: hash $2, $1, $0
+Register[$2] now has value 1
+PC is now: 660
+Instruction: ldinc $3, ($2)
+Register[$3] now has value 39
+PC is now: 661
+Instruction: st $3, ($2)
+Register[$3] now has value 39
+PC is now: 662
+Instruction: sto3inc $2, ($1)
+Register[$2] now has value 1
+PC is now: 663
+Instruction: hash $2, $1, $0
+Register[$2] now has value 1
+PC is now: 664
+Instruction: ldinc $3, ($2)
+Register[$3] now has value 40
+PC is now: 665
+Instruction: st $3, ($2)
+Register[$3] now has value 40
+PC is now: 666
+Instruction: sto3inc $2, ($1)
+Register[$2] now has value 1
+PC is now: 667
+Instruction: hash $2, $1, $0
+Register[$2] now has value 1
+PC is now: 668
+Instruction: ldinc $3, ($2)
+Register[$3] now has value 41
+PC is now: 669
+Instruction: st $3, ($2)
+Register[$3] now has value 41
+PC is now: 670
+Instruction: sto3inc $2, ($1)
+Register[$2] now has value 1
+PC is now: 671
+Instruction: hash $2, $1, $0
+Register[$2] now has value 3
+PC is now: 672
+Instruction: ldinc $3, ($2)
+Register[$3] now has value 24
+PC is now: 673
+Instruction: st $3, ($2)
+Register[$3] now has value 24
+PC is now: 674
+Instruction: sto3inc $2, ($1)
+Register[$2] now has value 3
+PC is now: 675
+Instruction: hash $2, $1, $0
+Register[$2] now has value 2
+PC is now: 676
+Instruction: ldinc $3, ($2)
+Register[$3] now has value 60
+PC is now: 677
+Instruction: st $3, ($2)
+Register[$3] now has value 60
+PC is now: 678
+Instruction: sto3inc $2, ($1)
+Register[$2] now has value 2
+PC is now: 679
+Instruction: hash $2, $1, $0
+Register[$2] now has value 2
+PC is now: 680
+Instruction: ldinc $3, ($2)
+Register[$3] now has value 61
+PC is now: 681
+Instruction: st $3, ($2)
+Register[$3] now has value 61
+PC is now: 682
+Instruction: sto3inc $2, ($1)
+Register[$2] now has value 2
+PC is now: 683
+Instruction: hash $2, $1, $0
+Register[$2] now has value 3
+PC is now: 684
+Instruction: ldinc $3, ($2)
+Register[$3] now has value 25
+PC is now: 685
+Instruction: st $3, ($2)
+Register[$3] now has value 25
+PC is now: 686
+Instruction: sto3inc $2, ($1)
+Register[$2] now has value 3
+PC is now: 687
+Instruction: hash $2, $1, $0
+Register[$2] now has value 3
+PC is now: 688
+Instruction: ldinc $3, ($2)
+Register[$3] now has value 26
+PC is now: 689
+Instruction: st $3, ($2)
+Register[$3] now has value 26
+PC is now: 690
+Instruction: sto3inc $2, ($1)
+Register[$2] now has value 3
+PC is now: 691
+Instruction: hash $2, $1, $0
+Register[$2] now has value 2
+PC is now: 692
+Instruction: ldinc $3, ($2)
+Register[$3] now has value 62
+PC is now: 693
+Instruction: st $3, ($2)
+Register[$3] now has value 62
+PC is now: 694
+Instruction: sto3inc $2, ($1)
+Register[$2] now has value 2
+PC is now: 695
+Instruction: hash $2, $1, $0
+Register[$2] now has value 1
+PC is now: 696
+Instruction: ldinc $3, ($2)
+Register[$3] now has value 42
+PC is now: 697
+Instruction: st $3, ($2)
+Register[$3] now has value 42
+PC is now: 698
+Instruction: sto3inc $2, ($1)
+Register[$2] now has value 1
+PC is now: 699
+Instruction: hash $2, $1, $0
+Register[$2] now has value 1
+PC is now: 700
+Instruction: ldinc $3, ($2)
+Register[$3] now has value 43
+PC is now: 701
+Instruction: st $3, ($2)
+Register[$3] now has value 43
+PC is now: 702
+Instruction: sto3inc $2, ($1)
+Register[$2] now has value 1
+PC is now: 703
+Instruction: hash $2, $1, $0
+Register[$2] now has value 0
+PC is now: 704
+Instruction: ldinc $3, ($2)
+Register[$3] now has value 45
+PC is now: 705
+Instruction: st $3, ($2)
+Register[$3] now has value 45
+PC is now: 706
+Instruction: sto3inc $2, ($1)
+Register[$2] now has value 0
+PC is now: 707
+Instruction: hash $2, $1, $0
+Register[$2] now has value 0
+PC is now: 708
+Instruction: ldinc $3, ($2)
+Register[$3] now has value 46
+PC is now: 709
+Instruction: st $3, ($2)
+Register[$3] now has value 46
+PC is now: 710
+Instruction: sto3inc $2, ($1)
+Register[$2] now has value 0
+PC is now: 711
+Instruction: hash $2, $1, $0
+Register[$2] now has value 0
+PC is now: 712
+Instruction: ldinc $3, ($2)
+Register[$3] now has value 47
+PC is now: 713
+Instruction: st $3, ($2)
+Register[$3] now has value 47
+PC is now: 714
+Instruction: sto3inc $2, ($1)
+Register[$2] now has value 0
+PC is now: 715
+Instruction: hash $2, $1, $0
+Register[$2] now has value 1
+PC is now: 716
+Instruction: ldinc $3, ($2)
+Register[$3] now has value 44
+PC is now: 717
+Instruction: st $3, ($2)
+Register[$3] now has value 44
+PC is now: 718
+Instruction: sto3inc $2, ($1)
+Register[$2] now has value 1
+PC is now: 719
+Instruction: hash $2, $1, $0
+Register[$2] now has value 2
+PC is now: 720
+Instruction: ldinc $3, ($2)
+Register[$3] now has value 63
+PC is now: 721
+Instruction: st $3, ($2)
+Register[$3] now has value 63
+PC is now: 722
+Instruction: sto3inc $2, ($1)
+Register[$2] now has value 2
+PC is now: 723
+Instruction: hash $2, $1, $0
+Register[$2] now has value 0
+PC is now: 724
+Instruction: ldinc $3, ($2)
+Register[$3] now has value 48
+PC is now: 725
+Instruction: st $3, ($2)
+Register[$3] now has value 48
+PC is now: 726
+Instruction: sto3inc $2, ($1)
+Register[$2] now has value 0
+PC is now: 727
+Instruction: hash $2, $1, $0
+Register[$2] now has value 0
+PC is now: 728
+Instruction: ldinc $3, ($2)
+Register[$3] now has value 49
+PC is now: 729
+Instruction: st $3, ($2)
+Register[$3] now has value 49
+PC is now: 730
+Instruction: sto3inc $2, ($1)
+Register[$2] now has value 0
+PC is now: 731
+Instruction: hash $2, $1, $0
+Register[$2] now has value 3
+PC is now: 732
+Instruction: ldinc $3, ($2)
+Register[$3] now has value 27
+PC is now: 733
+Instruction: st $3, ($2)
+Register[$3] now has value 27
+PC is now: 734
+Instruction: sto3inc $2, ($1)
+Register[$2] now has value 3
+PC is now: 735
+Instruction: hash $2, $1, $0
+Register[$2] now has value 1
+PC is now: 736
+Instruction: ldinc $3, ($2)
+Register[$3] now has value 45
+PC is now: 737
+Instruction: st $3, ($2)
+Register[$3] now has value 45
+PC is now: 738
+Instruction: sto3inc $2, ($1)
+Register[$2] now has value 1
+PC is now: 739
+Instruction: hash $2, $1, $0
+Register[$2] now has value 0
+PC is now: 740
+Instruction: ldinc $3, ($2)
+Register[$3] now has value 50
+PC is now: 741
+Instruction: st $3, ($2)
+Register[$3] now has value 50
+PC is now: 742
+Instruction: sto3inc $2, ($1)
+Register[$2] now has value 0
+PC is now: 743
+Instruction: hash $2, $1, $0
+Register[$2] now has value 0
+PC is now: 744
+Instruction: ldinc $3, ($2)
+Register[$3] now has value 51
+PC is now: 745
+Instruction: st $3, ($2)
+Register[$3] now has value 51
+PC is now: 746
+Instruction: sto3inc $2, ($1)
+Register[$2] now has value 0
+PC is now: 747
+Instruction: hash $2, $1, $0
+Register[$2] now has value 3
+PC is now: 748
+Instruction: ldinc $3, ($2)
+Register[$3] now has value 28
+PC is now: 749
+Instruction: st $3, ($2)
+Register[$3] now has value 28
+PC is now: 750
+Instruction: sto3inc $2, ($1)
+Register[$2] now has value 3
+PC is now: 751
+Instruction: hash $2, $1, $0
+Register[$2] now has value 0
+PC is now: 752
+Instruction: ldinc $3, ($2)
+Register[$3] now has value 52
+PC is now: 753
+Instruction: st $3, ($2)
+Register[$3] now has value 52
+PC is now: 754
+Instruction: sto3inc $2, ($1)
+Register[$2] now has value 0
+PC is now: 755
+Instruction: hash $2, $1, $0
+Register[$2] now has value 1
+PC is now: 756
+Instruction: ldinc $3, ($2)
+Register[$3] now has value 46
+PC is now: 757
+Instruction: st $3, ($2)
+Register[$3] now has value 46
+PC is now: 758
+Instruction: sto3inc $2, ($1)
+Register[$2] now has value 1
+PC is now: 759
+Instruction: hash $2, $1, $0
+Register[$2] now has value 1
+PC is now: 760
+Instruction: ldinc $3, ($2)
+Register[$3] now has value 47
+PC is now: 761
+Instruction: st $3, ($2)
+Register[$3] now has value 47
+PC is now: 762
+Instruction: sto3inc $2, ($1)
+Register[$2] now has value 1
+PC is now: 763
+Instruction: hash $2, $1, $0
+Register[$2] now has value 0
+PC is now: 764
+Instruction: ldinc $3, ($2)
+Register[$3] now has value 53
+PC is now: 765
+Instruction: st $3, ($2)
+Register[$3] now has value 53
+PC is now: 766
+Instruction: sto3inc $2, ($1)
+Register[$2] now has value 0
+PC is now: 767
+Instruction: hash $2, $1, $0
+Register[$2] now has value 2
+PC is now: 768
+Instruction: ldinc $3, ($2)
+Register[$3] now has value 64
+PC is now: 769
+Instruction: st $3, ($2)
+Register[$3] now has value 64
+PC is now: 770
+Instruction: sto3inc $2, ($1)
+Register[$2] now has value 2
+PC is now: 771
+Instruction: hash $2, $1, $0
+Register[$2] now has value 1
+PC is now: 772
+Instruction: ldinc $3, ($2)
+Register[$3] now has value 48
+PC is now: 773
+Instruction: st $3, ($2)
+Register[$3] now has value 48
+PC is now: 774
+Instruction: sto3inc $2, ($1)
+Register[$2] now has value 1
+PC is now: 775
+Instruction: hash $2, $1, $0
+Register[$2] now has value 1
+PC is now: 776
+Instruction: ldinc $3, ($2)
+Register[$3] now has value 49
+PC is now: 777
+Instruction: st $3, ($2)
+Register[$3] now has value 49
+PC is now: 778
+Instruction: sto3inc $2, ($1)
+Register[$2] now has value 1
+PC is now: 779
+Instruction: hash $2, $1, $0
+Register[$2] now has value 3
+PC is now: 780
+Instruction: ldinc $3, ($2)
+Register[$3] now has value 29
+PC is now: 781
+Instruction: st $3, ($2)
+Register[$3] now has value 29
+PC is now: 782
+Instruction: sto3inc $2, ($1)
+Register[$2] now has value 3
+PC is now: 783
+Instruction: hash $2, $1, $0
+Register[$2] now has value 1
+PC is now: 784
+Instruction: ldinc $3, ($2)
+Register[$3] now has value 50
+PC is now: 785
+Instruction: st $3, ($2)
+Register[$3] now has value 50
+PC is now: 786
+Instruction: sto3inc $2, ($1)
+Register[$2] now has value 1
+PC is now: 787
+Instruction: hash $2, $1, $0
+Register[$2] now has value 2
+PC is now: 788
+Instruction: ldinc $3, ($2)
+Register[$3] now has value 65
+PC is now: 789
+Instruction: st $3, ($2)
+Register[$3] now has value 65
+PC is now: 790
+Instruction: sto3inc $2, ($1)
+Register[$2] now has value 2
+PC is now: 791
+Instruction: hash $2, $1, $0
+Register[$2] now has value 0
+PC is now: 792
+Instruction: ldinc $3, ($2)
+Register[$3] now has value 54
+PC is now: 793
+Instruction: st $3, ($2)
+Register[$3] now has value 54
+PC is now: 794
+Instruction: sto3inc $2, ($1)
+Register[$2] now has value 0
+PC is now: 795
+Instruction: hash $2, $1, $0
+Register[$2] now has value 3
+PC is now: 796
+Instruction: ldinc $3, ($2)
+Register[$3] now has value 30
+PC is now: 797
+Instruction: st $3, ($2)
+Register[$3] now has value 30
+PC is now: 798
+Instruction: sto3inc $2, ($1)
+Register[$2] now has value 3
+PC is now: 799
+Instruction: hash $2, $1, $0
+Register[$2] now has value 0
+PC is now: 800
+Instruction: ldinc $3, ($2)
+Register[$3] now has value 55
+PC is now: 801
+Instruction: st $3, ($2)
+Register[$3] now has value 55
+PC is now: 802
+Instruction: sto3inc $2, ($1)
+Register[$2] now has value 0
+PC is now: 803
+Instruction: hash $2, $1, $0
+Register[$2] now has value 2
+PC is now: 804
+Instruction: ldinc $3, ($2)
+Register[$3] now has value 66
+PC is now: 805
+Instruction: st $3, ($2)
+Register[$3] now has value 66
+PC is now: 806
+Instruction: sto3inc $2, ($1)
+Register[$2] now has value 2
+PC is now: 807
+Instruction: hash $2, $1, $0
+Register[$2] now has value 0
+PC is now: 808
+Instruction: ldinc $3, ($2)
+Register[$3] now has value 56
+PC is now: 809
+Instruction: st $3, ($2)
+Register[$3] now has value 56
+PC is now: 810
+Instruction: sto3inc $2, ($1)
+Register[$2] now has value 0
+PC is now: 811
+Instruction: hash $2, $1, $0
+Register[$2] now has value 1
+PC is now: 812
+Instruction: ldinc $3, ($2)
+Register[$3] now has value 51
+PC is now: 813
+Instruction: st $3, ($2)
+Register[$3] now has value 51
+PC is now: 814
+Instruction: sto3inc $2, ($1)
+Register[$2] now has value 1
+PC is now: 815
+Instruction: hash $2, $1, $0
+Register[$2] now has value 0
+PC is now: 816
+Instruction: ldinc $3, ($2)
+Register[$3] now has value 57
+PC is now: 817
+Instruction: st $3, ($2)
+Register[$3] now has value 57
+PC is now: 818
+Instruction: sto3inc $2, ($1)
+Register[$2] now has value 0
+PC is now: 819
+Instruction: hash $2, $1, $0
+Register[$2] now has value 0
+PC is now: 820
+Instruction: ldinc $3, ($2)
+Register[$3] now has value 58
+PC is now: 821
+Instruction: st $3, ($2)
+Register[$3] now has value 58
+PC is now: 822
+Instruction: sto3inc $2, ($1)
+Register[$2] now has value 0
+PC is now: 823
+Instruction: hash $2, $1, $0
+Register[$2] now has value 2
+PC is now: 824
+Instruction: ldinc $3, ($2)
+Register[$3] now has value 67
+PC is now: 825
+Instruction: st $3, ($2)
+Register[$3] now has value 67
+PC is now: 826
+Instruction: sto3inc $2, ($1)
+Register[$2] now has value 2
+PC is now: 827
+Instruction: hash $2, $1, $0
+Register[$2] now has value 0
+PC is now: 828
+Instruction: ldinc $3, ($2)
+Register[$3] now has value 59
+PC is now: 829
+Instruction: st $3, ($2)
+Register[$3] now has value 59
+PC is now: 830
+Instruction: sto3inc $2, ($1)
+Register[$2] now has value 0
+PC is now: 831
+Instruction: hash $2, $1, $0
+Register[$2] now has value 1
+PC is now: 832
+Instruction: ldinc $3, ($2)
+Register[$3] now has value 52
+PC is now: 833
+Instruction: st $3, ($2)
+Register[$3] now has value 52
+PC is now: 834
+Instruction: sto3inc $2, ($1)
+Register[$2] now has value 1
+PC is now: 835
+Instruction: hash $2, $1, $0
+Register[$2] now has value 0
+PC is now: 836
+Instruction: ldinc $3, ($2)
+Register[$3] now has value 60
+PC is now: 837
+Instruction: st $3, ($2)
+Register[$3] now has value 60
+PC is now: 838
+Instruction: sto3inc $2, ($1)
+Register[$2] now has value 0
+PC is now: 839
+Instruction: hash $2, $1, $0
+Register[$2] now has value 2
+PC is now: 840
+Instruction: ldinc $3, ($2)
+Register[$3] now has value 68
+PC is now: 841
+Instruction: st $3, ($2)
+Register[$3] now has value 68
+PC is now: 842
+Instruction: sto3inc $2, ($1)
+Register[$2] now has value 2
+PC is now: 843
+Instruction: hash $2, $1, $0
+Register[$2] now has value 0
+PC is now: 844
+Instruction: ldinc $3, ($2)
+Register[$3] now has value 61
+PC is now: 845
+Instruction: st $3, ($2)
+Register[$3] now has value 61
+PC is now: 846
+Instruction: sto3inc $2, ($1)
+Register[$2] now has value 0
+PC is now: 847
+Instruction: hash $2, $1, $0
+Register[$2] now has value 2
+PC is now: 848
+Instruction: ldinc $3, ($2)
+Register[$3] now has value 69
+PC is now: 849
+Instruction: st $3, ($2)
+Register[$3] now has value 69
+PC is now: 850
+Instruction: sto3inc $2, ($1)
+Register[$2] now has value 2
+PC is now: 851
+Instruction: hash $2, $1, $0
+Register[$2] now has value 2
+PC is now: 852
+Instruction: ldinc $3, ($2)
+Register[$3] now has value 70
+PC is now: 853
+Instruction: st $3, ($2)
+Register[$3] now has value 70
+PC is now: 854
+Instruction: sto3inc $2, ($1)
+Register[$2] now has value 2
+PC is now: 855
+Instruction: hash $2, $1, $0
+Register[$2] now has value 1
+PC is now: 856
+Instruction: ldinc $3, ($2)
+Register[$3] now has value 53
+PC is now: 857
+Instruction: st $3, ($2)
+Register[$3] now has value 53
+PC is now: 858
+Instruction: sto3inc $2, ($1)
+Register[$2] now has value 1
+PC is now: 859
+Instruction: hash $2, $1, $0
+Register[$2] now has value 0
+PC is now: 860
+Instruction: ldinc $3, ($2)
+Register[$3] now has value 62
+PC is now: 861
+Instruction: st $3, ($2)
+Register[$3] now has value 62
+PC is now: 862
+Instruction: sto3inc $2, ($1)
+Register[$2] now has value 0
+PC is now: 863
+Instruction: hash $2, $1, $0
+Register[$2] now has value 3
+PC is now: 864
+Instruction: ldinc $3, ($2)
+Register[$3] now has value 31
+PC is now: 865
+Instruction: st $3, ($2)
+Register[$3] now has value 31
+PC is now: 866
+Instruction: sto3inc $2, ($1)
+Register[$2] now has value 3
+PC is now: 867
+Instruction: hash $2, $1, $0
+Register[$2] now has value 1
+PC is now: 868
+Instruction: ldinc $3, ($2)
+Register[$3] now has value 54
+PC is now: 869
+Instruction: st $3, ($2)
+Register[$3] now has value 54
+PC is now: 870
+Instruction: sto3inc $2, ($1)
+Register[$2] now has value 1
+PC is now: 871
+Instruction: hash $2, $1, $0
+Register[$2] now has value 1
+PC is now: 872
+Instruction: ldinc $3, ($2)
+Register[$3] now has value 55
+PC is now: 873
+Instruction: st $3, ($2)
+Register[$3] now has value 55
+PC is now: 874
+Instruction: sto3inc $2, ($1)
+Register[$2] now has value 1
+PC is now: 875
+Instruction: hash $2, $1, $0
+Register[$2] now has value 3
+PC is now: 876
+Instruction: ldinc $3, ($2)
+Register[$3] now has value 32
+PC is now: 877
+Instruction: st $3, ($2)
+Register[$3] now has value 32
+PC is now: 878
+Instruction: sto3inc $2, ($1)
+Register[$2] now has value 3
+PC is now: 879
+Instruction: hash $2, $1, $0
+Register[$2] now has value 0
+PC is now: 880
+Instruction: ldinc $3, ($2)
+Register[$3] now has value 63
+PC is now: 881
+Instruction: st $3, ($2)
+Register[$3] now has value 63
+PC is now: 882
+Instruction: sto3inc $2, ($1)
+Register[$2] now has value 0
+PC is now: 883
+Instruction: hash $2, $1, $0
+Register[$2] now has value 0
+PC is now: 884
+Instruction: ldinc $3, ($2)
+Register[$3] now has value 64
+PC is now: 885
+Instruction: st $3, ($2)
+Register[$3] now has value 64
+PC is now: 886
+Instruction: sto3inc $2, ($1)
+Register[$2] now has value 0
+PC is now: 887
+Instruction: hash $2, $1, $0
+Register[$2] now has value 1
+PC is now: 888
+Instruction: ldinc $3, ($2)
+Register[$3] now has value 56
+PC is now: 889
+Instruction: st $3, ($2)
+Register[$3] now has value 56
+PC is now: 890
+Instruction: sto3inc $2, ($1)
+Register[$2] now has value 1
+PC is now: 891
+Instruction: hash $2, $1, $0
+Register[$2] now has value 2
+PC is now: 892
+Instruction: ldinc $3, ($2)
+Register[$3] now has value 71
+PC is now: 893
+Instruction: st $3, ($2)
+Register[$3] now has value 71
+PC is now: 894
+Instruction: sto3inc $2, ($1)
+Register[$2] now has value 2
+PC is now: 895
+Instruction: hash $2, $1, $0
+Register[$2] now has value 2
+PC is now: 896
+Instruction: ldinc $3, ($2)
+Register[$3] now has value 72
+PC is now: 897
+Instruction: st $3, ($2)
+Register[$3] now has value 72
+PC is now: 898
+Instruction: sto3inc $2, ($1)
+Register[$2] now has value 2
+PC is now: 899
+Instruction: hash $2, $1, $0
+Register[$2] now has value 2
+PC is now: 900
+Instruction: ldinc $3, ($2)
+Register[$3] now has value 73
+PC is now: 901
+Instruction: st $3, ($2)
+Register[$3] now has value 73
+PC is now: 902
+Instruction: sto3inc $2, ($1)
+Register[$2] now has value 2
+PC is now: 903
+Instruction: hash $2, $1, $0
+Register[$2] now has value 2
+PC is now: 904
+Instruction: ldinc $3, ($2)
+Register[$3] now has value 74
+PC is now: 905
+Instruction: st $3, ($2)
+Register[$3] now has value 74
+PC is now: 906
+Instruction: sto3inc $2, ($1)
+Register[$2] now has value 2
+PC is now: 907
+Instruction: hash $2, $1, $0
+Register[$2] now has value 0
+PC is now: 908
+Instruction: ldinc $3, ($2)
+Register[$3] now has value 65
+PC is now: 909
+Instruction: st $3, ($2)
+Register[$3] now has value 65
+PC is now: 910
+Instruction: sto3inc $2, ($1)
+Register[$2] now has value 0
+PC is now: 911
+Instruction: hash $2, $1, $0
+Register[$2] now has value 0
+PC is now: 912
+Instruction: ldinc $3, ($2)
+Register[$3] now has value 66
+PC is now: 913
+Instruction: st $3, ($2)
+Register[$3] now has value 66
+PC is now: 914
+Instruction: sto3inc $2, ($1)
+Register[$2] now has value 0
+PC is now: 915
+Instruction: hash $2, $1, $0
+Register[$2] now has value 0
+PC is now: 916
+Instruction: ldinc $3, ($2)
+Register[$3] now has value 67
+PC is now: 917
+Instruction: st $3, ($2)
+Register[$3] now has value 67
+PC is now: 918
+Instruction: sto3inc $2, ($1)
+Register[$2] now has value 0
+PC is now: 919
+Instruction: hash $2, $1, $0
+Register[$2] now has value 1
+PC is now: 920
+Instruction: ldinc $3, ($2)
+Register[$3] now has value 57
+PC is now: 921
+Instruction: st $3, ($2)
+Register[$3] now has value 57
+PC is now: 922
+Instruction: sto3inc $2, ($1)
+Register[$2] now has value 1
+PC is now: 923
+Instruction: hash $2, $1, $0
+Register[$2] now has value 2
+PC is now: 924
+Instruction: ldinc $3, ($2)
+Register[$3] now has value 75
+PC is now: 925
+Instruction: st $3, ($2)
+Register[$3] now has value 75
+PC is now: 926
+Instruction: sto3inc $2, ($1)
+Register[$2] now has value 2
+PC is now: 927
+Instruction: hash $2, $1, $0
+Register[$2] now has value 0
+PC is now: 928
+Instruction: ldinc $3, ($2)
+Register[$3] now has value 68
+PC is now: 929
+Instruction: st $3, ($2)
+Register[$3] now has value 68
+PC is now: 930
+Instruction: sto3inc $2, ($1)
+Register[$2] now has value 0
+PC is now: 931
+Instruction: hash $2, $1, $0
+Register[$2] now has value 1
+PC is now: 932
+Instruction: ldinc $3, ($2)
+Register[$3] now has value 58
+PC is now: 933
+Instruction: st $3, ($2)
+Register[$3] now has value 58
+PC is now: 934
+Instruction: sto3inc $2, ($1)
+Register[$2] now has value 1
+PC is now: 935
+Instruction: hash $2, $1, $0
+Register[$2] now has value 1
+PC is now: 936
+Instruction: ldinc $3, ($2)
+Register[$3] now has value 59
+PC is now: 937
+Instruction: st $3, ($2)
+Register[$3] now has value 59
+PC is now: 938
+Instruction: sto3inc $2, ($1)
+Register[$2] now has value 1
+PC is now: 939
+Instruction: hash $2, $1, $0
+Register[$2] now has value 0
+PC is now: 940
+Instruction: ldinc $3, ($2)
+Register[$3] now has value 69
+PC is now: 941
+Instruction: st $3, ($2)
+Register[$3] now has value 69
+PC is now: 942
+Instruction: sto3inc $2, ($1)
+Register[$2] now has value 0
+PC is now: 943
+Instruction: hash $2, $1, $0
+Register[$2] now has value 1
+PC is now: 944
+Instruction: ldinc $3, ($2)
+Register[$3] now has value 60
+PC is now: 945
+Instruction: st $3, ($2)
+Register[$3] now has value 60
+PC is now: 946
+Instruction: sto3inc $2, ($1)
+Register[$2] now has value 1
+PC is now: 947
+Instruction: hash $2, $1, $0
+Register[$2] now has value 2
+PC is now: 948
+Instruction: ldinc $3, ($2)
+Register[$3] now has value 76
+PC is now: 949
+Instruction: st $3, ($2)
+Register[$3] now has value 76
+PC is now: 950
+Instruction: sto3inc $2, ($1)
+Register[$2] now has value 2
+PC is now: 951
+Instruction: hash $2, $1, $0
+Register[$2] now has value 0
+PC is now: 952
+Instruction: ldinc $3, ($2)
+Register[$3] now has value 70
+PC is now: 953
+Instruction: st $3, ($2)
+Register[$3] now has value 70
+PC is now: 954
+Instruction: sto3inc $2, ($1)
+Register[$2] now has value 0
+PC is now: 955
+Instruction: hash $2, $1, $0
+Register[$2] now has value 1
+PC is now: 956
+Instruction: ldinc $3, ($2)
+Register[$3] now has value 61
+PC is now: 957
+Instruction: st $3, ($2)
+Register[$3] now has value 61
+PC is now: 958
+Instruction: sto3inc $2, ($1)
+Register[$2] now has value 1
+PC is now: 959
+Instruction: hash $2, $1, $0
+Register[$2] now has value 2
+PC is now: 960
+Instruction: ldinc $3, ($2)
+Register[$3] now has value 77
+PC is now: 961
+Instruction: st $3, ($2)
+Register[$3] now has value 77
+PC is now: 962
+Instruction: sto3inc $2, ($1)
+Register[$2] now has value 2
+PC is now: 963
+Instruction: hash $2, $1, $0
+Register[$2] now has value 2
+PC is now: 964
+Instruction: ldinc $3, ($2)
+Register[$3] now has value 78
+PC is now: 965
+Instruction: st $3, ($2)
+Register[$3] now has value 78
+PC is now: 966
+Instruction: sto3inc $2, ($1)
+Register[$2] now has value 2
+PC is now: 967
+Instruction: hash $2, $1, $0
+Register[$2] now has value 1
+PC is now: 968
+Instruction: ldinc $3, ($2)
+Register[$3] now has value 62
+PC is now: 969
+Instruction: st $3, ($2)
+Register[$3] now has value 62
+PC is now: 970
+Instruction: sto3inc $2, ($1)
+Register[$2] now has value 1
+PC is now: 971
+Instruction: hash $2, $1, $0
+Register[$2] now has value 2
+PC is now: 972
+Instruction: ldinc $3, ($2)
+Register[$3] now has value 79
+PC is now: 973
+Instruction: st $3, ($2)
+Register[$3] now has value 79
+PC is now: 974
+Instruction: sto3inc $2, ($1)
+Register[$2] now has value 2
+PC is now: 975
+Instruction: hash $2, $1, $0
+Register[$2] now has value 0
+PC is now: 976
+Instruction: ldinc $3, ($2)
+Register[$3] now has value 71
+PC is now: 977
+Instruction: st $3, ($2)
+Register[$3] now has value 71
+PC is now: 978
+Instruction: sto3inc $2, ($1)
+Register[$2] now has value 0
+PC is now: 979
+Instruction: hash $2, $1, $0
+Register[$2] now has value 1
+PC is now: 980
+Instruction: ldinc $3, ($2)
+Register[$3] now has value 63
+PC is now: 981
+Instruction: st $3, ($2)
+Register[$3] now has value 63
+PC is now: 982
+Instruction: sto3inc $2, ($1)
+Register[$2] now has value 1
+PC is now: 983
+Instruction: hash $2, $1, $0
+Register[$2] now has value 0
+PC is now: 984
+Instruction: ldinc $3, ($2)
+Register[$3] now has value 72
+PC is now: 985
+Instruction: st $3, ($2)
+Register[$3] now has value 72
+PC is now: 986
+Instruction: sto3inc $2, ($1)
+Register[$2] now has value 0
+PC is now: 987
+Instruction: hash $2, $1, $0
+Register[$2] now has value 2
+PC is now: 988
+Instruction: ldinc $3, ($2)
+Register[$3] now has value 80
+PC is now: 989
+Instruction: st $3, ($2)
+Register[$3] now has value 80
+PC is now: 990
+Instruction: sto3inc $2, ($1)
+Register[$2] now has value 2
+PC is now: 991
+Instruction: hash $2, $1, $0
+Register[$2] now has value 0
+PC is now: 992
+Instruction: ldinc $3, ($2)
+Register[$3] now has value 73
+PC is now: 993
+Instruction: st $3, ($2)
+Register[$3] now has value 73
+PC is now: 994
+Instruction: sto3inc $2, ($1)
+Register[$2] now has value 0
+PC is now: 995
+Instruction: hash $2, $1, $0
+Register[$2] now has value 2
+PC is now: 996
+Instruction: ldinc $3, ($2)
+Register[$3] now has value 81
+PC is now: 997
+Instruction: st $3, ($2)
+Register[$3] now has value 81
+PC is now: 998
+Instruction: sto3inc $2, ($1)
+Register[$2] now has value 2
+PC is now: 999
+Instruction: hash $2, $1, $0
+Register[$2] now has value 3
+PC is now: 1000
+Instruction: ldinc $3, ($2)
+Register[$3] now has value 33
+PC is now: 1001
+Instruction: st $3, ($2)
+Register[$3] now has value 33
+PC is now: 1002
+Instruction: sto3inc $2, ($1)
+Register[$2] now has value 3
+PC is now: 1003
+Instruction: hash $2, $1, $0
+Register[$2] now has value 1
+PC is now: 1004
+Instruction: ldinc $3, ($2)
+Register[$3] now has value 64
+PC is now: 1005
+Instruction: st $3, ($2)
+Register[$3] now has value 64
+PC is now: 1006
+Instruction: sto3inc $2, ($1)
+Register[$2] now has value 1
+PC is now: 1007
+Instruction: hash $2, $1, $0
+Register[$2] now has value 2
+PC is now: 1008
+Instruction: ldinc $3, ($2)
+Register[$3] now has value 82
+PC is now: 1009
+Instruction: st $3, ($2)
+Register[$3] now has value 82
+PC is now: 1010
+Instruction: sto3inc $2, ($1)
+Register[$2] now has value 2
+PC is now: 1011
+Instruction: hash $2, $1, $0
+Register[$2] now has value 2
+PC is now: 1012
+Instruction: ldinc $3, ($2)
+Register[$3] now has value 83
+PC is now: 1013
+Instruction: st $3, ($2)
+Register[$3] now has value 83
+PC is now: 1014
+Instruction: sto3inc $2, ($1)
+Register[$2] now has value 2
+PC is now: 1015
+Instruction: hash $2, $1, $0
+Register[$2] now has value 1
+PC is now: 1016
+Instruction: ldinc $3, ($2)
+Register[$3] now has value 65
+PC is now: 1017
+Instruction: st $3, ($2)
+Register[$3] now has value 65
+PC is now: 1018
+Instruction: sto3inc $2, ($1)
+Register[$2] now has value 1
+PC is now: 1019
+Instruction: hash $2, $1, $0
+Register[$2] now has value 0
+PC is now: 1020
+Instruction: ldinc $3, ($2)
+Register[$3] now has value 74
+PC is now: 1021
+Instruction: st $3, ($2)
+Register[$3] now has value 74
+PC is now: 1022
+Instruction: sto3inc $2, ($1)
+Register[$2] now has value 0
+PC is now: 1023
+
+ECE 366 Project 3
+Created by: Zhongy Chen and Claire Chappee
+Final Output for mc1.txt
+****************************************************
+Registers and their value
+$0 --> 250
+$1 --> 256
+$2 --> 0
+$3 --> 74
+pc --> 1023
+****************************************************
+Memory contents of 0b0 - 0b100000010 (0x0 - 0x102):
+Address   Value(+0)   Value(+1)   Value(+2)   Value(+3)   Value(+4)   Value(+5)   Value(+6)   Value(+7)
+  0x000         74|         65|         83|         33|          0|          3|          0|          1| 
+  0x008          1|          2|          3|          1|          0|          2|          3|          2| 
+  0x010          1|          2|          3|          2|          2|          0|          1|          0| 
+  0x018          0|          1|          1|          2|          0|          0|          0|          1| 
+  0x020          2|          1|          3|          3|          2|          1|          2|          3| 
+  0x028          2|          1|          1|          3|          3|          2|          1|          2| 
+  0x030          2|          0|          3|          0|          3|          2|          0|          0| 
+  0x038          2|          3|          1|          0|          0|          1|          2|          2| 
+  0x040          2|          2|          2|          1|          1|          2|          0|          1| 
+  0x048          0|          3|          2|          1|          0|          2|          2|          0| 
+  0x050          0|          1|          2|          2|          0|          0|          3|          2| 
+  0x058          1|          2|          2|          3|          1|          2|          0|          0| 
+  0x060          3|          0|          2|          0|          2|          1|          0|          1| 
+  0x068          0|          0|          2|          3|          0|          0|          1|          0| 
+  0x070          3|          0|          0|          0|          2|          2|          3|          1| 
+  0x078          1|          2|          0|          1|          1|          3|          0|          2| 
+  0x080          2|          2|          2|          0|          1|          2|          2|          2| 
+  0x088          1|          1|          0|          1|          2|          0|          1|          1| 
+  0x090          2|          2|          2|          1|          2|          2|          2|          3| 
+  0x098          2|          2|          2|          2|          0|          2|          1|          0| 
+  0x0a0          3|          0|          2|          1|          2|          0|          2|          3| 
+  0x0a8          1|          1|          1|          3|          2|          2|          3|          3| 
+  0x0b0          2|          1|          1|          0|          0|          0|          1|          2| 
+  0x0b8          0|          0|          3|          1|          0|          0|          3|          0| 
+  0x0c0          1|          1|          0|          2|          1|          1|          3|          1| 
+  0x0c8          2|          0|          3|          0|          2|          0|          1|          0| 
+  0x0d0          0|          2|          0|          1|          0|          2|          0|          2| 
+  0x0d8          2|          1|          0|          3|          1|          1|          3|          0| 
+  0x0e0          0|          1|          2|          2|          2|          2|          0|          0| 
+  0x0e8          0|          1|          2|          0|          1|          1|          0|          1| 
+  0x0f0          2|          0|          1|          2|          2|          1|          2|          0| 
+  0x0f8          1|          0|          2|          0|          2|          3|          1|          2| 
+  0x100          2|          1|          0| 
+****************************************************
+Dynamic Instruction Count --> 1023

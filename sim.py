@@ -1,274 +1,283 @@
 # ECE 366 Project 3 Fall 2019
-# Group 12: Zhongy Chen & Claire Chappee
-f = 0
+# Group 12: Zhongyi Chen & Claire Chappee
+f = 0;
 instr_logging = True
 
 registers = {
-        '00': 0,
-        '01': 0,
-        '10': 0,
-        '11': 0,
-        'pc': 0
-    }
+    '00': 0,
+    '01': 0,
+    '10': 0,
+    '11': 0,
+    'pc': 0
+}
+register_names = {
+    '00': '$0',
+    '01': '$1',
+    '10': '$2',
+    '11': '$3',
+    'pc': 'pc'
+}
 
-#2^9 needs to be the size of our memory
+# 2^9 needs to be the size of our memory
 memory = [0] * 512
+instr_memory = []
 
-def myFunc(line):
+def executeLine(line):
     if(line[0:2] == "00"): #lui
-        rx = int(line[2:4], 2)
-        imm = int(line[4:8], 4)
-        imm = imm << 4
-        registers[rx] = imm
-        pc += 1
-        print("Instruction: lui " + str(rx) + "," + str(imm))
-        print("pc is now: " + str(pc))
+        rx = line[2:4]
+        imm = int(line[4:8], 2)
+        immExt = imm << 4
+        registers[rx] = immExt
+        registers['pc'] += 1
+        if (instr_logging == True):
+            f.write("Instruction: lui " + register_names[rx] + ", " + str(imm) + '\n')
+            f.write("Register[" + register_names[rx] + "] now has value " + str(registers[rx]) + "\n")
+            f.write("PC is now: " + str(registers['pc']) + "\n")
 
     if(line[0:2] == "01"): #addi
-        rx = int(line[2:4], 2)
-        imm = int(line[4:8], 4)
+        rx = line[2:4]
+        imm = int(line[4:8], 2)
         registers[rx] = registers[rx] + imm
-        pc += 1
-        print("Instruction: addi " + str(rx) + "," + str(imm))
-        print("pc is now: " + str(pc))
+        registers['pc'] += 1
+        if (instr_logging == True):
+            f.write("Instruction: addi " + register_names[rx] + ", " + str(imm) + "\n")
+            f.write("Register[" + register_names[rx] + "] now has value " + str(registers[rx]) + "\n")
+            f.write("PC is now: " + str(registers['pc']) + "\n")
 
     if(line[0:2] == "10"): #hash 
-        rx = int(line[2:4], 2)
-        ry = int(line[4:6], 2)
-        rz = int(line[6:8], 2)
+        rx = line[2:4]
+        ry = line[4:6]
+        rz = line[6:8]
         #registers[rx] = H(ry, rz)
+        srcA = registers[ry]
+        srcB = registers[rz]
         for i in range(0, 5):
-            srcA = ry
-            srcB = rz
-            temp = srcA * srcB
-            hi = (temp ^ 0xFF00) >> 8
-            lo = temp ^ 0xFF
+            product = srcA * srcB
+            hi = (product & 0xFF00) >> 8
+            lo = product & 0xFF
             srcA = hi ^ lo
-        pc += 1
-        print("Instruction: hash " + str(rx) + "," + str(ry) + "," + str(rz))
-        print("pc is now: " + str(pc))
+        srcB = srcA & 0xF
+        srcA = (srcA & 0xF0) >> 4
+        c = srcA ^ srcB
+        registers[rx] = ((c & 0xC) >> 2) ^ (c & 0x3)
+        registers['pc'] += 1
+        if (instr_logging == True):
+            f.write("Instruction: hash " + register_names[rx] + ", " + register_names[ry] + ", " + register_names[rz] + "\n")
+            f.write("Register[" + register_names[rx] + "] now has value " + str(registers[rx]) + "\n")
+            f.write("PC is now: " + str(registers['pc']) + "\n")
 
     if(line[0:4] == "1100"): #ldinc
-        rx = int(line[4:6], 2)
-        ry = int(line[6:8], 2)
-        registers[rx] = memory[int(ry,2)] + 1
-        pc += 1
-        print("Instruction: ldinc " + str(rx) + "," + "(" + str(ry) + ")" )
-        print("pc is now: " + str(pc))
+        rx = line[4:6]
+        ry = line[6:8]
+        registers[rx] = memory[registers[ry]] + 1
+        registers['pc'] += 1
+        if (instr_logging == True):
+            f.write("Instruction: ldinc " + register_names[rx] + ", " + "(" + register_names[ry] + ")\n")
+            f.write("Register[" + register_names[rx] + "] now has value " + str(registers[rx]) + "\n")
+            f.write("PC is now: " + str(registers['pc']) + "\n")
 
     if(line[0:4] == "1110"): #st 
-        rx = int(line[4:6], 2)
-        ry = int(line[6:8], 2)
-        memory[int(ry,2)] = registers[rx]
-        pc += 1
-        print("Instruction: st " + str(rx) + "," + "(" + str(ry) + ")" )
-        print("pc is now: " + str(pc))
+        rx = line[4:6]
+        ry = line[6:8]
+        memory[registers[ry]] = registers[rx]
+        registers['pc'] += 1
+        if (instr_logging == True):
+            f.write("Instruction: st " + register_names[rx] + ", " + "(" + register_names[ry] + ")\n" )
+            f.write("Register[" + register_names[rx] + "] now has value " + str(registers[rx]) + "\n")
+            f.write("PC is now: " + str(registers['pc']) + "\n")
 
     if(line[0:4] == "1111"): #sto3inc 
-        rx = int(line[4:6], 2)
-        ry = int(line[6:8], 2)
-        valRX = registers[rx]
-        srcA = registers[ry]
-        srcB = 3
-        aluResult = srcA + srcB
-        memory[aluResult] = valRX
+        rx = line[4:6]
+        ry = line[6:8]
+        memory[registers[ry] + 3] = registers[rx]
         registers[ry] += 1
-        pc += 1
-        print("Instruction: sto3inc " + str(rx) + "," + "(" + str(ry) + ")" )
-        print("pc is now: " + str(pc))
+        registers['pc'] += 1
+        if (instr_logging == True):
+            f.write("Instruction: sto3inc " + register_names[rx] + ", " + "(" + register_names[ry] + ")\n" )
+            f.write("Register[" + register_names[rx] + "] now has value " + str(registers[rx]) + "\n")
+            f.write("PC is now: " + str(registers['pc']) + "\n")
 
-def initializeInstrMemory(instr_mem_array, labels_dict, asm):
-    index = 0
-    for line in asm:
+def initializeInstrMemory(instr_mem_array, mCode):
+    for line in mCode:
         line = line.strip()
         if (line == ''):
             continue
-        if (line.count(":")):
-            labels_dict[line[0:line.index(":")]] = index
         else:
-            index += 1
             instr_mem_array.append(line)
-
-class Instruction:
-    def __init__(self, instrStr):
-        self.str = instrStr
-        instrParts = instrStr.split(' ', 1)
-        self.f_type = instrParts[0]
-        instrParts = instrParts[1].split(',')
-        for i in range(0,len(instrParts)):
-            if (instrParts[i].count('(')):
-                spec = instrParts[i]
-                instrParts.pop()
-                instrParts.append(spec[0:spec.index('(')].strip())
-                instrParts.append(spec[spec.index('(')+1:spec.index(')')].strip())
-                break
-            instrParts[i] = instrParts[i].strip()
-        self.instrVals = instrParts
-    
-    def execute(self):
-        self.func[self.f_type](self.instrVals)
-
-    def toString(self):
-        return self.str
 
 def main():
     global f
     global registers
+    global register_names
     global memory
+    global instr_memory
 
-    f1 = open("output1.txt","w+")
+    f1 = open("outputFA.txt","w+")
     h1 = open("mc1.txt","r")
-    f2 = open("output2.txt","w+")
+    f2 = open("output19.txt","w+")
     h2 = open("mc2.txt","r")
-    f3 = open("output3.txt","w+")
+    f3 = open("outputE3.txt","w+")
     h3 = open("mc3.txt","r")
-    f4 = open("output4.txt","w+")
+    f4 = open("output66.txt","w+")
     h4 = open("mc4.txt","r")
 
     if (instr_logging == True):
         f = f1
-    asm = h1.readlines() 
-    initializeInstrMemory(instr_memory, labelDict, asm)
+    mCode = h1.readlines() 
+    initializeInstrMemory(instr_memory, mCode)
     instrCount = len(instr_memory)
     dynamInstrCount = 0
-    while (registers['pc'] >> 2 < instrCount):
-        asmLine = instr_memory[registers['pc'] >> 2]
-        instr = Instruction(asmLine)
-        if (instr_logging == True):
-            f1.write('Instruction: ' + instr.toString() + '\n')
-        instr.execute()
+    while (registers['pc'] < instrCount):
+        mcLine = instr_memory[registers['pc']]
+        executeLine(mcLine)
         dynamInstrCount += 1
-    #Testcase Output
-    f1.write('ECE 366 Project 3\n')
+    #Output for B = FA
+    f1.write('\nECE 366 Project 3\n')
     f1.write('Created by: Zhongy Chen and Claire Chappee\n')
-    f1.write('Output for mc1.txt\n')
+    f1.write('Final Output for mc1.txt\n')
     f1.write('****************************************************\n')
+    f1.write('Registers and their value\n')
     for key in registers:
-        f1.write(key + ' --> ' + str(registers[key]) + '\n')
+        f1.write(register_names[key] + ' --> ' + str(registers[key]) + '\n')
     f1.write('****************************************************\n')
-    f1.write('The memory contents of 0x2000 - 0x225C are:\n')
-    memOutputSize = 12
-    for i in range(0, 152):
+    f1.write('Memory contents of 0b0 - 0b100000010 (0x0 - 0x102):\n')
+    memOutputSize = 10
+    f1.write('Address   Value(+0)   Value(+1)   Value(+2)   Value(+3)   Value(+4)   Value(+5)   Value(+6)   Value(+7)\n')
+    for i in range(0, 259):
         if (i != 0 and i % 8 == 0):
             f1.write('\n')
+        if (i % 8 == 0):
+            f1.write('  0x%03x ' % i)
         for j in range(0, memOutputSize - len(str(memory[i]))):
             f1.write(' ')
-        f1.write(str(memory[i]) + ' ')
+        f1.write(str(memory[i]) + '| ')
     f1.write('\n****************************************************\n')
     f1.write('Dynamic Instruction Count --> ' + str(dynamInstrCount))
     #clear memory
     for key in registers:
         registers[key] = 0
-    memory = [0] * 1024
+    memory = [0] * 512
+    instr_memory = []
+
+
 
     if (instr_logging == True):
         f = f2
-    asm = h2.readlines() 
-    initializeInstrMemory(instr_memory, labelDict, asm)
+    mCode = h2.readlines() 
+    initializeInstrMemory(instr_memory, mCode)
     instrCount = len(instr_memory)
     dynamInstrCount = 0
-    while (registers['pc'] >> 2 < instrCount):
-        asmLine = instr_memory[registers['pc'] >> 2]
-        instr = Instruction(asmLine)
-        if (instr_logging == True):
-            f2.write('Instruction: ' + instr.toString() + '\n')
-        instr.execute()
+    while (registers['pc'] < instrCount):
+        mcLine = instr_memory[registers['pc']]
+        executeLine(mcLine)
         dynamInstrCount += 1
-    #Testcase Output
-    f2.write('ECE 366 Project 3\n')
+    #Output for B = 19
+    f2.write('\nECE 366 Project 3\n')
     f2.write('Created by: Zhongy Chen and Claire Chappee\n')
-    f2.write('Output for mc2.txt\n')
+    f2.write('Final Output for mc2.txt\n')
     f2.write('****************************************************\n')
+    f2.write('Registers and their values\n')
     for key in registers:
-        f2.write(key + ' --> ' + str(registers[key]) + '\n')
+        f2.write(register_names[key] + ' --> ' + str(registers[key]) + '\n')
     f2.write('****************************************************\n')
-    f2.write('The memory contents of 0x2000 - 0x225C are:\n')
-    memOutputSize = 12
-    for i in range(0, 152):
+    f2.write('Memory contents of 0b0 - 0b100000010 (0x0 - 0x102):\n')
+    memOutputSize = 10
+    f2.write('Address   Value(+0)   Value(+1)   Value(+2)   Value(+3)   Value(+4)   Value(+5)   Value(+6)   Value(+7)\n')
+    for i in range(0, 259):
         if (i != 0 and i % 8 == 0):
             f2.write('\n')
+        if (i % 8 == 0):
+            f2.write('  0x%03x ' % i)
         for j in range(0, memOutputSize - len(str(memory[i]))):
             f2.write(' ')
-        f2.write(str(memory[i]) + ' ')
+        f2.write(str(memory[i]) + '| ')
     f2.write('\n****************************************************\n')
     f2.write('Dynamic Instruction Count --> ' + str(dynamInstrCount))
     #clear memory
     for key in registers:
         registers[key] = 0
-    memory = [0] * 1024
+    memory = [0] * 512
+    instr_memory = []
+
+
 
     if (instr_logging == True):
         f = f3
-    asm = h3.readlines() 
-    initializeInstrMemory(instr_memory, labelDict, asm)
+    mCode = h3.readlines() 
+    initializeInstrMemory(instr_memory, mCode)
     instrCount = len(instr_memory)
     dynamInstrCount = 0
-    while (registers['pc'] >> 2 < instrCount):
-        asmLine = instr_memory[registers['pc'] >> 2]
-        instr = Instruction(asmLine)
-        if (instr_logging == True):
-            f3.write('Instruction: ' + instr.toString() + '\n')
-        instr.execute()
+    while (registers['pc'] < instrCount):
+        mcLine = instr_memory[registers['pc']]
+        executeLine(mcLine)
         dynamInstrCount += 1
-    #Testcase Output
-    f3.write('ECE 366 Project 3\n')
+    #Output for B = E3
+    f3.write('\nECE 366 Project 3\n')
     f3.write('Created by: Zhongy Chen and Claire Chappee\n')
-    f3.write('Output for mc3.txt\n')
+    f3.write('Final Output for mc3.txt\n')
     f3.write('****************************************************\n')
+    f3.write('Registers and their values\n')
     for key in registers:
-        f3.write(key + ' --> ' + str(registers[key]) + '\n')
+        f3.write(register_names[key] + ' --> ' + str(registers[key]) + '\n')
     f3.write('****************************************************\n')
-    f3.write('The memory contents of 0x2000 - 0x225C are:\n')
-    memOutputSize = 12
-    for i in range(0, 152):
+    f3.write('Memory contents of 0b0 - 0b100000010 (0x0 - 0x102):\n')
+    memOutputSize = 10
+    f3.write('Address   Value(+0)   Value(+1)   Value(+2)   Value(+3)   Value(+4)   Value(+5)   Value(+6)   Value(+7)\n')
+    for i in range(0, 259):
         if (i != 0 and i % 8 == 0):
             f3.write('\n')
+        if (i % 8 == 0):
+            f3.write('  0x%03x ' % i)
         for j in range(0, memOutputSize - len(str(memory[i]))):
             f3.write(' ')
-        f3.write(str(memory[i]) + ' ')
+        f3.write(str(memory[i]) + '| ')
     f3.write('\n****************************************************\n')
     f3.write('Dynamic Instruction Count --> ' + str(dynamInstrCount))
     #clear memory
     for key in registers:
         registers[key] = 0
-    memory = [0] * 1024
+    memory = [0] * 512
+    instr_memory = []
+
+
 
     if (instr_logging == True):
         f = f4
-    asm = h4.readlines() 
-    initializeInstrMemory(instr_memory, labelDict, asm)
+    mCode = h4.readlines() 
+    initializeInstrMemory(instr_memory, mCode)
     instrCount = len(instr_memory)
     dynamInstrCount = 0
-    while (registers['pc'] >> 2 < instrCount):
-        asmLine = instr_memory[registers['pc'] >> 2]
-        instr = Instruction(asmLine)
-        if (instr_logging == True):
-            f4.write('Instruction: ' + instr.toString() + '\n')
-        instr.execute()
+    while (registers['pc'] < instrCount):
+        mcLine = instr_memory[registers['pc']]
+        executeLine(mcLine)
         dynamInstrCount += 1
-    #Testcase Output
-    f4.write('ECE 366 Project 3\n')
+    #Output for B = 66
+    f4.write('\nECE 366 Project 3\n')
     f4.write('Created by: Zhongy Chen and Claire Chappee\n')
-    f4.write('Output for mc4.txt\n')
+    f4.write('Final Output for mc4.txt\n')
     f4.write('****************************************************\n')
+    f4.write('Registers and their value\n')
     for key in registers:
-        f4.write(key + ' --> ' + str(registers[key]) + '\n')
+        f4.write(register_names[key] + ' --> ' + str(registers[key]) + '\n')
     f4.write('****************************************************\n')
-    f4.write('The memory contents of 0x2000 - 0x225C are:\n')
-    memOutputSize = 12
-    for i in range(0, 152):
+    f4.write('Memory contents of 0b0 - 0b100000010 (0x0 - 0x102):\n')
+    memOutputSize = 10
+    f4.write('Address   Value(+0)   Value(+1)   Value(+2)   Value(+3)   Value(+4)   Value(+5)   Value(+6)   Value(+7)\n')
+    for i in range(0, 259):
         if (i != 0 and i % 8 == 0):
             f4.write('\n')
+        if (i % 8 == 0):
+            f4.write('  0x%03x ' % i)
         for j in range(0, memOutputSize - len(str(memory[i]))):
             f4.write(' ')
-        f4.write(str(memory[i]) + ' ')
+        f4.write(str(memory[i]) + '| ')
     f4.write('\n****************************************************\n')
     f4.write('Dynamic Instruction Count --> ' + str(dynamInstrCount))
     #clear memory
     for key in registers:
         registers[key] = 0
     memory = [0] * 512
-
+    instr_memory = []
 
 if __name__ == "__main__":
     main()
